@@ -1,0 +1,351 @@
+Set-15
+
+1.	What is Collection framework? 
+	(It represents architecture for storing and manipulating group of objects. It has interfaces , classes and algorithms)
+
+2.	What is the root interface in Collection hierarchy? 
+
+3.	What is an Iterable interface? 
+	(Iterable interface provides the facility of iterating the elements in forward direction only. It provides a generic way for traversal through 
+	the elements of a Collection and implements Iterator design pattern)
+	
+4.	Which design pattern is followed by Iterable interface? 
+	(iterator design pattern)
+
+5.	What was the java’s Collections framework equivalent in c++ called as? 
+	(c++ standard template library)
+
+6.	What was the java’s Collections framework equivalent in smalltalk called as? 
+	(small talk Collection hierarchy)
+
+7.	What are the benefits of java’s Collection framework? 
+	(reduces programming effort, increases programming speed and quality, allows inter operability, reduces effort to design new softwares)
+
+8.	When was Collections framework introduced in java? 
+	(jdk 1.2)
+
+9.	Which were the adhoc classes that were provided in java for dealing with collection of objects before java’s Collection framework was introduced? 
+	(Vector, Stack, Hashtable, Properties)
+
+10.	What was the problem with these adhoc classes?
+	 (Although these classes were useful, they lacked a central unifying theme. Therefore the way Vector class was used was different from the way Stack class was used)
+
+11.	What is a Dictionary? 
+	(It is a legacy abstract class. It represented key-value storage repository. It was much like today’s Map class)
+
+12.	What is a Hashtable? 
+	(It is a legacy class. It is the concrete implementation of Dictionary)
+
+13.	What is a Property class?
+	 (It is a legacy class. It is a subclass of Hashtable class. It is used to maintain key-value pair such that key is a String and value is also a String)
+
+14.	When does a ClassCastException occur?
+	 (When an attempt is made to typecast incompatible types)
+
+15.	When does an UnsupportedOperationException occur?
+	 (When an attempt is made to modify an unmodifiable Collection)
+
+16.	Name the three static variables present in Collection framework? 
+	(EMPTY_SET, EMPTY_LIST, EMPTY_MAP)
+
+17.	Differentiate between Array and ArrayList?
+	 (can store primitive, fixed size, homogeneous data, no additional functionality, fast, autoboxing not required)
+	
+18.	When will use Array over ArrayList? 
+	(if the size is known in advance, for storing list of primitive data types, while dealing with multi-dimensional situation)
+	
+19.	What are the similarities between ArrayList and Vector? 
+	(both maintain the order of insertion, both are fail-fast, both allow null values, both provide index based accessing)
+
+20.	Differentiate between ArrayList and Vector?
+
+21.	Differentiate between ArrayList and LinkedList?
+
+22.	Differentiate between Iterator and ListIterator?
+
+23.	Differentiate between Iterator and Enumeration?
+
+24.	Differentiate between List and Set?
+
+25.	Differentiate between HashSet and TreeSet?
+
+26.	Differentiate between Set and Map?
+
+27.	Differentiate between HashSet and HashMap?
+
+28.	Differentiate between HashMap  and TreeMap?
+
+29.	Differentiate between HashMap and Hashtable? 
+	(ht- is synchronized, legacy cannot contain null key or null value)
+
+30.	Differentiate between Collection and Collections?
+
+31.	Differentiate between Comparable and Comparator? 
+	(Comparable- provides sorting based on only one sequence, it provides compareTo(), found in java.lang package, we can implement the interface only if the source class is accessible)
+
+32.	Are the List, Set and Map elements automatically synchronized in java’s Collection framework? 
+	(No)
+
+33.	How do we synchronize List, Set and Map elements? 
+	(page-17, Collections.synchronizeCollection(Collection c))
+
+34.	What is the advantage of generic Collection? 
+	(It is type safe, it is checked at compiled time, it avoids ClassCastException, makes the code clean since we need not use casting)
+
+35.	What is collision in Hashtable and how is it handled? 
+
+36.	What is load factor in hashing base Collection?
+
+37.	Why is Map not a part of Collection framework? 
+	(because map contains key-value pair and does not fit into the Collection framework paradigm which contains only values)
+
+38.	What is the difference between fail-fast and fail-safe?
+
+39.	How do we avoid ConcurrentModificationException while iterating Collection? 
+	(use the classes provided in java.util.concurrent package)
+	
+40.	What are the different Collection views provided by Map interface?
+	 (Keyset(), EntrySet(), values())
+	
+41.	How do you decide between using HashMap and TreeMap? 
+	(If inserting, deleting and locating elements is of prime importance then HashMap must be used. However if traversing the keys in a sorted order then TreeMap must be used)
+	
+42.	Which Collection classes are Thread-safe? 
+	(Vector, Hashtable, Properties, Stack since they are synchronized. From jdk 1.5 onwards classes present in java.util.concurrent package such as CopyOnWriteArrayList, 
+	CopyOnWriteArraySet, ConcurrentHashMap)
+	
+43.	What is a blocking Queue? 
+	(It is a queue in which retrieval is possible if and only if the queue is non-empty and insertion is possible only when space is available. 
+	It is used for implementing producer-consumer problem)
+	
+44.	How can we sort a list of objects? 
+	(Collections.sort() and by implementing Comparable or Comparator interface)
+	
+45.	While passing a Collection as argument to a function how can we make sure that a function will not be able to modify it? 
+	(by creating read only collection using Collections.unmodifiableCollection(Collection c))
+
+46.	What are the common algorithms implemented in Collections class?
+	
+47.	What are the best practices related to java Collections framework? 
+	(choose the best type of Collection depending upon objects to be stored, if the number of objects to be stored is known in advance then preferably use 
+	Collections classes that allow you to specify the initial capacity. Always use generics for type safety and to avoid ClassCastException at run time. 
+	Use Collections utility class methods since it enhances code re-usability, greater stability and maintainability)
+
+48.	Which are the classes that have implemented the List interface? 
+	(Vector, ArrayList,  LinkedList)
+	
+49.	Which are the classes that have implemented the Set interface? 
+	(TreeSet, HashSet, LinkedHashSet)
+
+50.	Which are the classes that have implemented the Queue interface? 
+	(ArrayDeque, PriorityQueue)
+
+51.	Which are the classes that have implemented the Map interface? 
+	(TreeMap, HashMap, LinkedHashMap)
+
+52.	Which methods do we have to override in order to use an object as a key in HashMap? 
+	(hashCode(), equals())
+
+53.	What is the difference between Stack and Queue? 
+	(Stack is a legacy class whereas Queue is an interface which is present in the Collection hierarchy)
+
+54.	How do we reverse the List in Collection? 
+	(using 1. Collections.reverse() 2. Collectrions.sort() and giving it to the reverse order Comparator) 
+	
+55.	How do we convert an array of String into a List? 
+
+(import java.util.Arrays;  
+import java.util.List;  
+import java.util.ArrayList;  
+public class StringArrayTest  
+{  
+   public static void main(String[] args)  
+   {  
+      String[] words = {"ace", "boom", "crew", "dog", "eon"};  
+
+      List<String> wordList = Arrays.asList(words);  
+
+      for (String e : wordList)  
+      {  
+         System.out.println(e);  
+      }  
+   }  
+}
+)
+
+56.	What is the difference between peek(), poll() and remove() methods of Queue interface? 
+	(peek() only retrieves the object, poll() would not only retrieves the object but also deletes peek() and poll() would return null if the queue is empty whereas
+	 remove() would throw NoSuchElementException)
+
+57.	What is the difference between HashMap and ConcurrenthashMap? 
+	(HashMap-not thread safe , ConcurrentHashMap is thread safe. HashMap allow null value and null key, ConcurrentHashMap does not allow null key and null value)
+	
+58.	Arrange the following in the descending order of performance- ConcurrentHashMap, Hashtable, HashMap, Collections.SynchronizedMap. 
+	(HashMap, ConcurrenthashMap, Collections. SynchronizedMap, Hashtable)
+
+59.	How does HashMap work?
+
+60.	What is identity HashMap? 
+	(it implements Map interface by using reference equality instead of object equality)
+	
+61.	What is weakHashMap? 
+	(It is an implementation of Map interface with weak keys)
+	
+62.	What is a Data Structure? 
+	(It is a particular way of organizing the data in a computer so that it can be efficiently used)
+
+63.	Can any of the Collection class store primitive data? 
+	(no)
+
+64.	What happens when a primitive data is given to a Collection class? 
+	(auto boxing takes place)
+
+65.	What is meant by boxing?
+
+66.	What is meant by auto-boxing?
+
+67.	What is meant by unboxing?.
+
+68.	What is meant by auto-unboxing?
+
+69.	What is the initial capacity of a Vector? 
+	(10)
+
+70.	By what factor does the capacity increase in case of a Vector if the existing capacity is filled? 
+	(it gets doubled)
+
+71.	What are the different ways of printing a Vector?.
+
+72.	What are the different ways of printing a ArrayList?
+
+73.	What are the different ways of printing a LinkedList?
+
+74.	What are the different ways of printing a ArrayDeque?
+
+75.	What are the different ways of printing a PriorityQueue?
+
+76.	What are the different ways of printing a Treeset?
+
+77.	What are the different ways of printing a HashSet?
+
+78.	What are the different ways of printing a LinkedHashSet?
+
+79.	What are the different ways of printing a Treemap?
+
+80.	What are the different ways of printing a LinkedMap?
+
+81.	What are the different ways of printing a LinkedHashMap?
+
+82.	What is the role of clone()?
+
+83.	How can a Array be converted to a List? 
+	(using asList())
+
+84.	How can a List be converted to a Array?
+	 (using toArray())
+
+85.	What is the difference between add() and set()? 
+	(add is used to insert an element at the end whereas set method replaces specific element at the specified location)
+
+86.	What is the role of retainsAll()?
+	
+87.	Which are the Collection class in which duplicates are permitted? 
+	(arraylist, linkedlist, vector, arraydeque, priority queue)
+
+88.	Which are the Collection class in which duplicates are not permitted? 
+	(treeset, hashset, linkedhashset, treemap, hashmap, linkedhashmap)
+
+89.	Which are the Collection class in which null are permitted? 
+	(linkedlist, arraylist, vectors, hashmap, linkedhashmap, treemap)
+
+90.	Which are the Collection class in which null is not permitted? 
+	(treeset, hashset, linkedhashset, priority queue, arrayydequeue)
+
+91.	What are the two ways in which a LinkedList can be accessed in the reverse oredr? 
+	(descendingIterator(), iterator(index)-hasPrevious)
+	
+92.	What is the difference between add() and offer()?
+	
+93.	Which Data Structure is used internally by the Vector class? 
+	(dynamic array ds)
+
+94.	Which Data Structure is used internally by the ArayList class? 
+	(dynamic array ds)
+
+95.	Which Data Structure is used internally by the LinkedList class? 
+
+96.	Which Data Structure is used internally by the ArrayDeque class? 
+	(dynamic array ds)
+
+97.	Which Data Structure is used internally by the PriorityQueue class?
+	 (min heap ds)
+
+98.	Which Data Structure is used internally by the TreeSet class? 
+	(red black algorithm)
+
+99.	Which Data Structure is used internally by the HashSet class? 
+	(hashing)
+
+100.	Which Data Structure is used internally by the LinkedHashSet class? 
+	(hashing)
+
+101.	Which Data Structure is used internally by the TreeMap class? 
+	(red map algorithm)
+
+102.	Which Data Structure is used internally by the HashMap class? 
+	(hashing)
+
+103.	Which Data Structure is used internally by the LinkedHashMap class? 
+	(hashing)
+
+104.	Under what circumstances should we use the Vector class? 
+
+105.	Under what circumstances should we use the ArrayList class? 
+	(manipulation is easy at the rear end)
+
+106.	Under what circumstances should we use the LinkedList class? 
+	(manipulation is easy in the middle)
+	
+107.	Under what circumstances should we use the ArrayDeque class? 
+	(front end and rear end)
+
+108.	Under what circumstances should we use the PriorityDeque class? 
+	(highest priority object at the front)
+
+109.	Under what circumstances should we use the TreeSet class? 
+	(object to be stored in sorted manner)
+
+110.	Under what circumstances should we use the HashSet class? 
+	(searching is efficient)
+	
+111.	Under what circumstances should we use the LinkedHashSet class? 
+	(searching should be efficient and order of insertion is retained)
+
+112.	Under what circumstances should we use the TreeMap class? 
+	(objects to be in sorted manner)
+
+113.	Under what circumstances should we use the HashMap class?
+	 (searching should be efficient)
+
+114.	Under what circumstances should we use the LinkedHashMap class? 
+	(searching should be efficient and order should be retained)
+
+115.	What is the role of ceiling () and floor ()?
+
+116.	What is the role of higher () and lower ()?
+
+117.	What is the role of headset () and tailSet ()?
+
+118.	Give the Collection interface hierarchy?
+
+119.	Give the Map interface hierarchy?
+
+120.	How can we perform reverse sorting on a Vector?
+
+121.	How do you sort the data present in non-indexing data structure?
+	 (treeset)
+
+122.	How do you sort a Map? 
+	(converting map to set and then convert to list)
+
+

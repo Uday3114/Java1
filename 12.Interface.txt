@@ -1,0 +1,246 @@
+Set-12
+
+1.	What is the difference between abstract classes and interfaces?
+
+1.	(abstract keyword is used to create an abstract class and it can be used with methods also whereas interface keyword is used to create interface and it can’t be used with methods.
+
+2.	Subclasses use extends keyword to extend an abstract class and they need to provide implementation of all the declared methods in the abstract class unless the subclass is 
+	also an abstract class whereas subclasses use implements keyword to implement interfaces and should provide implementation for all the methods declared in the interface.
+
+3.	Abstract classes can have methods with implementation whereas interface provides absolute abstraction and can’t have any method implementations.
+
+4.	Abstract classes can have constructors but interfaces can’t have constructors.
+
+5.	Abstract classes have all the features of a normal java class except that we can’t instantiate it. 
+	We can use abstract keyword to make a class abstract but interfaces are a completely different type and can have only public static final constants and method declarations.
+
+6.	Abstract class’s methods can have access modifiers as public, private, protected, static but interface methods are implicitly public and abstract, 
+	we can’t use any other access modifiers with interface methods.
+
+7.	A subclass can extend only one abstract class but it can implement multiple interfaces.
+
+8.	Abstract classes can extend other class and implement interfaces but interface can only extend other interfaces.
+
+9.	We can run an abstract class if it has main() method but we can’t run an interface because they can’t have main method implementation.
+
+10.	Interfaces are used to define contract for the subclasses whereas abstract class also define contract but it can provide other methods implementations for subclasses to use.)
+
+2.	When should you consider using interfaces in your project?
+	(Ans –standardization, polymorphism, compactness, flexibility. )
+
+3.	Can a class implement an interface? 
+	(yes)
+
+4.	Can an abstract class implement an interface? 
+	(yes)
+
+5.	Can an interface contain constant declaration? 
+	(ans- yes)
+
+6.	Can an interface contain method declaration? 
+	(ans- yes)
+
+7.	Can an interface contain nested class declaration? 
+	(ans- yes)
+
+8.	Can an interface contain nested interface declaration? 
+	(ans- yes)
+
+9.	Can interfaces have constructors? 
+	(ans- no)
+	
+10.	Can an interface have main() method? 
+	(no)
+	
+11.	What are the changes in Java 1.8 with respect to interfaces?
+	(ans-static methods and default methods can be included in an interface)
+
+12.	Class C implements Interface I containing method m1 and m2 declarations. Class C has provided implementation for method m2. Can i create an object of Class C? 
+	(it becomes abstract class and abstract classes cannot be instantiated)
+	
+13.	Can a method inside an interface be declared as final? 
+	(if a method in an interface is declared as final then no class can implement it. Hence not permitted)
+	
+14.	Why is an Interface  able to implement more than one Interface but a Class can't extend more than one Class? 
+	(no diamond shape in interface)
+
+15.	Can an interface be treated as a “contract” that spells out how the softwares interact? 
+	(yes)
+
+16.	What can an interface contain? 
+	(ans- constants, public method declarations, default method declarations, static method declarations)
+
+17.	Can we have a default interface? 
+	(yes)
+
+18.	How is a default interface different from a public interface? 
+	(Default interface is accessible only within the same package. Public interface is accessible to everyone)
+
+19.	Can an interface implement another interface? 
+	(no)
+
+20.	Can an interface extend another interface? 
+	(yes)
+
+21.	Can an interface implement multiple interfaces? 
+	(no)
+
+22.	Can an interface extend multiple interfaces? 
+	(yes)
+
+23.	What type of methods can exist in an interface? 
+	(ans- public methods, default methods, static methods)
+
+24.	What is the access modifier of methods in the interface? 
+	(public abstract)
+
+25.	What is the access modifier of constant declaration in the interface? 
+	(public static final)
+
+26.	What is the role of a default method in interfaces?
+	(ans- enables upgradation of interface)
+
+27.	What is the role of a static method in interfaces? 
+	(ans- enables upgradation of interface)
+
+28.	How do you add new functionality to existing interfaces? 
+	(ans- by using static methods, by using default methods)
+
+29.	What type of polymorphism is achieved by interfaces?
+	(run time polymorphism, true polymorphism)
+	
+30.	What is meant by substitutability? 
+	(ans- parent reference to child object, upcasting)
+
+31.	Can interface be declared as protected?
+	(no)
+
+32.	Can the fields in an interface be declared protected? 
+	(no)
+
+33.	Can an Interface be defined inside a class?
+	(ans- yes)
+
+34.	Can a class be defined inside an Interface?
+	(ans- yes)
+
+35.	When can an object reference be cast to an interface reference? 
+	(if implements relationship holds good)
+
+36.	What is interface? 
+	(Collection of public abstract methods and public static final constants, can also contain default methods and static methods. Used to achieve standardization and promote polymorphism)
+	
+37.	Why did the concept of interface emerge in java? 
+	(to promote standardization)
+
+38.	Why can’t we create an object of interface? 
+	(because interface is abstract(incomplete))
+
+39.	Why does java permit the creation of reference of interface? 
+	(to promote polymorphism, loose coupling)
+
+40.	Can we access the methods in an interface using the interface reference? 
+	(no)
+
+41.	Can we access the implemented methods of an interface using the interface reference? 
+	(yes)
+
+42.	Can an interface have multiple implementations? 
+	(yes)
+	
+43.	Why should we not extend an interface?
+	(trick question) 
+	
+44.	Why should we always implements an interface?
+	(interfaces are incomplete and hence we must implement it(give body to it))
+	
+45.	Why is an interface method public automatically? 
+	(because it has to be accessible to implementing class)
+
+46.	Why is an interface method abstract automatically? 
+	(because it would not have any implementations)
+
+47.	Should an implementing class override all methods of an interface? 
+	(not compulsory, if the implementing class partially implements it then the implementing class must be declared as abstract)
+
+48.	Why is an interface variable public automatically?
+	(so that it is accessible to the implementing class) 
+
+49.	Why is an interface variable static automatically? 
+	(so that a single copy of the variable is created and all the implementing classes must share and use this single copy)
+
+50.	Why is an interface variable final automatically? 
+	(because none of the implementing classes should modify it and alter the value)
+
+51.	What is a Marker Interface? 
+	(an interface which contains no method declaration or variable declarations.Its an empty interface.Its also called as tagged interface or indicator interface)
+
+52.	What must a class do to implement an interface? 
+	(it must provide bodies)
+
+53.	How does java support multiple inheritance indirectly? 
+	(through interfaces)
+
+54.	What is a method in an interface automatically considered as? 
+	(public abstract)
+
+55.	What is a variable in an interface automatically considered as? 
+	(public static final)
+
+56.	Why do we require variable within an interface? 
+	(Interfaces are used to achieve standardization. Standardization maybe required not only in methods but also in variable declarations, if the project demands. 
+	Hence interfaces permit variable declarations as well. HDFC,PNB,ICICI count=3(password chances))
+
+57.	Can we create an object of a class which partially implements interface? 
+	(no)
+
+58.	Can an overriding method in the class be of a weaker access privilege than that of the corresponding method in the interface? 
+	(no)
+
+59.	Why should we always declare the overriding method of an interface in the class as public? 
+	(otherwise it becomes weaker access)
+
+60.	When is an assignment operator considered legal by JVM? 
+	(type should match or extends should be there or implements should be there)
+
+61.	Can we assign a class object to an interface reference? 
+	(yes)
+
+62.	Why is an interface variable considered final but not an interface method? 
+	(An interface variable is automatically considered final since it is created with the intention that the implementing classes should not alter its value.However interface method 
+	is an abstract method(incomplete method). It is not automatically considered final. This is because if it is automatically considered final then the implementing class 
+	would never be able to implement the abstract method.)
+
+63.	Do abstract classes promote true abstraction or do interfaces promote true abstraction? 
+	(interfaces. This is because abstract classes may sometimes contain concrete methods whereas interfaces always contain only abstract methods.Hence interfaces promote true abstraction.)
+
+64.	Do abstract classes promote true polymorphism or do interfaces promote true polymorphism? 
+	(both)
+
+65.	Every role that an interface plays in programming can also be achieved through abstract classes. Then why do we require interfaces?
+	(Abstraction is one of the preferred features of object orientation. Though abstraction can be promoted in a project using either abstract classes 
+	or interfaces yet true abstraction is promoted by interfaces, hence interfaces are the preferred choice even though most of the thing that an interface achieves can also 
+	be achieved using abstract classes. ) 
+
+66.	Can an overriding method of a class slightly alter the signature of the method present in the interface?
+
+67.	Does interface impose any restrictions on the implementation of the methods within a class?
+	(no provided the signature is unaltered)
+
+68.	Do interfaces promote loose coupling or tight coupling? Explain?
+
+69.	What is the UML notation to represent interfaces?
+
+70.	If a class is both extending and implementing then what is the order that it must follow?
+	(extends first and implements later (remember alphabetical order))
+
+71.	Can a reference of interface access the specialized method of the class which implements it? 
+	(not directly)
+
+72.	What is a tagged interface? 
+	(ans- same as Marker interface)
+
+
+
+
+

@@ -1,0 +1,95 @@
+Set-7
+1.	Which object oriented concept is achieved using overloading? 
+	(three concepts-encapsulation, polymorphism and inheritance)
+
+2.	What restrictions are placed on method overloading? 
+	(order should be different)
+
+3.	Does c++ support operator overloading? 
+	(yes)
+
+4.	Can overloaded methods have different return types?
+	 (yes)
+
+5.	Can overloaded methods have different access modifiers? 
+	(yes)
+
+6.	Can overloaded methods declare checked exceptions?
+	 (yes)
+
+7.	Is method overloading compile time polymorphism or run time polymorphism? 
+	(compile time polymorphism)
+
+8.	What is a native method? 
+	(native methods are such methods which are coded in other languages)
+
+9.	What is the advantage of native methods? 
+	(improves overall performance of the code)
+
+10.	What is meant by method overloading with typepromotion? 
+	(numeric promotion)
+
+11.	What is the problem of performing method overloading with typepromotion? 
+	(ambiguity)
+
+12.	If c++ supports operator overloading then why not java? 
+	(it supports operator overloading but programmers don’t have the power)
+
+13.	What are methods in java also called as? 
+	(functions, modules, subroutines, procedures, does, behaviors)
+
+14.	What are the 4 different types of behaviors in java? 
+	(no input no output, no input with output, input with no output and input with output)
+
+15.	Does the behavior fall under the has or the does category in java? 
+	(does)
+
+16.	Give examples of 4 types of behaviors in java. 
+	(example done in the class)
+
+17.	What is an activation record? 
+	(it is a record present on the stack. The general format of an activation record is: actual parameters, return value. control link, access line(reference variable), 
+	saved machine status, local variables, temporaries)
+
+18.	When and where is the activation record created? 
+	(on the stack, when the method is called. Activation record contains actual parameters, return value, control link,  access link, saved memory, local variables, temporaries)
+
+19.	When does the activation record get deleted? 
+	( when control goes out of the method)
+
+20.	Where are the reference variables and local variables created in java? 
+	(in activation record in stack)
+
+21.	What is meant by method overloading? 
+	(refers to the process of creating multiple methods all with the same name. Used to achieve virtual polymorphism in java.)
+
+22.	What is overloaded in method overloading?
+	(nothing is overloaded. User of the methods virtually feels one method is doing multiple activities , but in reality there would be multiple methods all with the same name doin one one activity each)
+
+23.	Why is method overloading considered as virtual polymorphism? 
+	(because nothing is overloaded or virtual thinking)
+
+24.	What is the criteria that must be ensured for method overloading in java? 
+	(order should be different)
+
+25.	What is the advantage of method overloading? 
+	(ease of usability,user is prevented from memorizing multiple method names)
+
+26.	Does the return type of the method play any role in method overloading? 
+	(no)
+
+27.	If we do not specify the return type of a method, then what will be the default return type? 
+	(int)
+
+28.	Why are activation records stored on the stack?
+	 (because of first in last out)
+
+29.	What is the difference between method overloading and method overriding?
+ 
+30.	Is operator overloading supported in java? 
+	(partially)
+
+31.	What is the disadvantage of method overloading? 
+	(it increases the burden on compiler)
+
+

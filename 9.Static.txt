@@ -1,0 +1,212 @@
+Set -9
+
+1.	What are the different types of static elements that can exist in a class? 
+	(static variables, static blocks, static methods)
+	
+2.	When should we declare a variable as static?
+	(when common to all the copies)
+
+3.	When should we create static blocks? 
+	(to initialize static variables, to execute a set of )statements even before before the execution of main()
+
+4.	When should we declare a method as static? 
+	(when the method is a utility method. When the method in real life is callable without any object)
+
+5.	 When should we declare a variable as non static? 
+	(if we require variables to be a part of every object)
+
+6.	Why should we create non static blocks? 
+	(to initialize non static data, it also enables to count the number of objects of a class)
+
+7.	When should we declare a method as non static? 
+	(if it is not a utility method if it is a specific method, if it is such a method which has to be accessed through a reference)
+
+8.	Can static method access non static data? Why ? 
+	(no, because it wont be ready)
+
+9.	Can static block access non static data? Why ?  
+	(no)
+
+10.	Can static method access static data? Why?  
+	(yes)
+
+11.	Can static block access static data? Why?
+	 (yes )
+
+12.	Can non static method access non static data? Why ? 
+	(yes)
+
+13.	Can non static block access non static data? Why ? 
+	(yes)
+
+14.	Can non static method access static data? Why?
+	 (yes)
+
+15.	Can non static block access static data? Why? 
+	(yes)
+
+16.	Who initializes static data to default value? 
+	(jvm)
+
+17.	Who initializes non static data? 
+	(jvm)
+
+18.	When does the static block get executed? 
+	(soon after the memory allocation of static variables , before the execution of main)
+
+19.	When does the non static block get executed? 
+	(Soon after  object creation)
+
+20.	From where would the static methods be loaded into the stack? 
+	(Static segment)
+
+21.	From where would the non static methods be loaded into the stack? 
+	(Code segment)
+
+22.	What is a class loader? 
+	(it is part of jvm which loads static elements from code segment to static segment)
+
+23.	Why should the main() be declared static? 
+	(if not class loader wont load it to static segment and the jvm would not be able to load it into the stack segment and execute it. In other words thw application never gets launched)
+
+24.	List practical applications of static keyword? 
+	(Adhar card-nationality, for all VTU students-university,in boys school-gender, institute-fees)
+
+25.	I want to print "Hello" even before main() is executed. How can I acheive that? 
+	(make it static)
+
+26.	Can we have a static variable and a non static variable with the same name in a given class? 
+	(no)
+
+27.	Can a class be declared as static? 
+	(not outer class , but inner class[nested class])
+
+28.	Can we use this keyword on a static variable? 
+	(no)
+
+29.	Can we use this keyword on a non static variable? 
+	(yes)
+
+30.	Can we declare a static variable inside a static method? 
+	(no(1]the moment a variable is declared inside it becomes local, a local variable comes to life once the control enters the methods and gets killed when it leaves the method , 
+	if the static variable is killed this way then all the objects of class cannot share the variable which is killed.2]local variables are allocated MEMEORY in stack where as static variable is 
+	allocated in static segment)
+
+31.	Can we declare a static variable inside a non-static method? 
+	(no)
+
+32.	What is the difference between class variables, instance variables and local variables? 
+	(class variables-one copy, instance variables-one copy/object, local variables-wont be initialized)
+
+33.	What happens to a static variable that is defined within a method of a class? 
+	(Cant create only)
+
+34.	How many static initializers can you have and in what order do they get executed? 
+	(As many as possible, in the order they are typed. They get executed in the same order they are coded. However multiple static initializers are not required in reality 
+	a single static initializer can be used to perform all initializations)
+
+35.	Can main() method be overloaded? 
+	(no)- It can be overloaded
+
+36.	What is the main role of static keyword? 
+	(Memory management)
+
+37.	Can we apply static keyword on variables? 
+	(yes)
+
+38.	Can we apply static keyword on methods? 
+	(yes)
+
+39.	Can we apply static keyword on blocks? 
+	(yes)
+
+40.	Can we apply static keyword on class? 
+	(yes)
+
+41.	Can we apply static keyword on nested class? 
+	(yes)
+
+42.	Can we apply static keyword on package? 
+	(yes)
+
+43.	Can we apply static keyword on constructor? 
+	(no)
+
+44.	What is a static variable also known as? 
+	(Class variable)
+
+45.	What is a static method also known as? 
+	(Class method or utility method)
+
+46.	How can we count the number of objects that are created of a class? 
+	(class program)
+
+47.	Can we call a static method without using an object? 
+	(yes)
+
+48.	Can we call a static method using an object? 
+	(yes)
+
+49.	Can we call a non static method without using an object? 
+	(no)
+
+50.	Can we call a non static method using an object? 
+	(yes)
+
+51.	Can we execute a program without main()? 
+	(Upto jdk 1.6 possible, not in 1.7)
+
+52.	What is the difference between static variable and non static variable? 
+	(static-also called class variable, non static-also called instance variable. Sta-memory is allocated in the static segment, non-sta- memory is allocated on the heap segment. 
+	Sta-memory is not de-allocated by garbage collected, non-memory is deallocated by the garbage collector. Sta- a single copy is created which all objects have to be shared, 
+	non-a copy is created for each object of the class. Sta-this keyword cannot be used, non-this keyword can be used)
+
+53.	What would happen if a top level class in java is declared as static? 
+	(error)
+
+54.	When are static variables initialized? 
+	(During class loading, class loader initializes)
+
+55.	When are non static variables initialized? 
+	(When objects or instances are created)
+
+56.	Can static methods be overloaded? 
+	(yes)
+
+57.	What is the problem when static keyword is used in multithreaded environment? 
+	(Race condition)
+
+58.	What are the disadvantages with static methods? 
+	(ans- cannot override, cannot be used in multi threaded environment, deadlock)
+
+59.	Which design pattern can be implemented through static method? 
+	Factory design pattern
+
+60.	Name a few static classes in java? 
+	Wrapper classes, java.lang.math, java.lang.collections, wrapper classes
+
+61.	Which keyword must be used along with static for creating constants? 
+	final
+
+62.	What is the use of nested static class? 
+	Packaging convinience
+
+63.	What are the restrictions imposed on static methods? 
+	Static methods cannot access non static data and cannot use this.
+
+64.	How can “one per class” policy enforced in java? 
+	Using static
+
+65.	What is the difference between nested classes and inner classes?
+	(if inner class is declared as static then it becomes nested)
+
+66.	Can the nested classes have access to the other members of the enclosing class? 
+	No, but inner classes can access
+		
+67.	Can the inner class have access to the other members of the enclosing class? 
+	yes
+
+68.	What are the advantages of nested classes? 
+	(ans- increases encapsulation, makes packaging more streamlined, makes code readable and maintainable)
+
+

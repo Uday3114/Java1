@@ -1,0 +1,326 @@
+Set -3
+
+1.  In what format is Integer data stored in memory unit? 
+ 	(base-2)
+
+2.  In what format is real number data stored in memory unit? 
+	(IEEE format)
+
+3.  Which data types in Java are used to handle Integer data? 
+	(byte, short, int, long)
+
+4.  In what format is still picture data stored in memory unit? 
+	(jpeg, gif)
+
+10. What are the different types of data in real world?
+	(character data,integer data,real number data,yes/no data,audio,video,still pic)
+
+11. In what format is video data stored in memory unit? 
+	(mp4, mpeg, avi)
+
+12. What is the real number data by default treated in Java? 
+	(double)
+
+13. What is the range of data that can be stored in long data type? 
+	(ans- -9223372036854775808L to 9223372036854775807L )
+
+14. How many bytes are allocated for short data type in Java?  
+	(2 bytes)
+
+15. Does Java follow ASCII or UNICODE ? Why? 
+	(UNICODE)
+
+16. How many bytes are allocated for long data type in Java?  
+	(8 bytes)
+
+17. How many bytes are allocated for float data type in Java? 
+	(4 bytes)
+
+18. What is the range of data that can be stored in byte data type? 
+	(-128 to 127)
+
+19. In what format is audio data stored in memory unit? 
+	(mp3)
+
+20. What is the range of data that can be stored in short data type? 
+	(-32768 to 32767)
+
+21. How many bytes are allocated for char data type in Java? Why? 
+	(2 bytes)
+
+22. Is zero a positive number or negative number in programming? Why? 
+	(ans- positive, since its MSB in the binary form is zero)
+
+23. Who initiates the process of executing a program? 
+	(OS, actually OS activates the JVM and JVM initiates the process)
+
+24. Why does Java provide primitive data types inspite of the fact that it makes it only 99% OOP? 
+	(ans- primitive data types reduce memory consumption, it enables faster creation of newer variables)
+
+25. What is the range of double? 
+	(ans- 1.7e-308 to 1.7e+308)
+
+26. Why does Java provide four data types to manage Integer type data? 
+	(because in real life we have varying magnitude of data)
+
+27. Why does Java provide two data types to manage real number type data? 
+	(for more precision and less precision)
+
+28. Why should data be stored in form of 0s and 1s in the memory? 
+	(because memory is made up of semiconductor and it can understand only zeros and ones)
+
+29. How is audio type data handled in Java? 
+	(through in built classes)
+
+30. How is video type data handled in Java? 
+	(through in built classes)
+
+31. How is still picture type data handled in Java? 
+	(through in built classes)
+
+32. How many bytes are allocated for boolean data type in Java? 
+	(JVM dependent)
+
+33. What is the range of float? 
+	(ans- 3.4e-038 to 3.4e+038)
+
+34. What are the different data types in Java? 
+	(byte, short, int, long, float, double, boolean, char, inbuilt classes)
+
+35. How is data stored in the memory unit? 
+	(binary form)
+
+36. Which data types in Java are used to handle real number data? 
+	(float, double)
+
+37. In what format is character data stored in memory unit? 
+	(UTF-8, UTF-16, UTF-32)
+
+38. In what format is yes/no data stored in memory unit? 
+	(JVM dependent)
+
+39. Why did UNICODE come into existence? 
+	(because ASCII did not have all languages all symbols)
+
+40. What is the range of data that can be stored in int data type?
+	(ans- -2147483648 to 2147483647)
+
+41. How can you convert double data type to float data type in Java? 
+	(by typecasting or by putting f at the end)
+
+42. How many bytes are allocated for byte data type in Java? 
+	(1 byte)
+
+43 How many bytes are allocated for double data type in Java? 
+	(8 bytes)
+
+44. How many bytes are allocated for int data type in Java? 
+	(4 bytes)
+
+45. Which special characters may be used as the first character of an identifier? 
+	($ and _)
+
+46. Which characters may be used as the second character of an identifier, but not as the first character of an identifier? 
+	(digits. For ex- t6emp, temp6 is valid but 6temp is invalid)
+
+47. How many bit format is ASCII exactly? 
+	(7 bit format)
+
+48. Why is ASCII format forcefully stored as 8-bit format? 
+	(because minimum memory that a hardware can allocate is 8bits)
+
+49. What is UTF? 
+	(Universal Translational Format)
+
+50. What is UTF-8? When is it used normally? 
+	(it is a format in which for every symbol 8 bit is used. Normally English and its associated symbols)
+
+51. What is UTF-16? When is it used normally? 
+	(it is a format in which for every symbol 16 bits is used. Normally used if text used symbols of most of the nation)
+
+52. What is UTF-32? When is it used normally?
+	(not only contains English symbols but also symbols of vernacular languages currently and previously used.)
+
+53. What is meant by rounding towards zero in integer division? 
+	(truncation, fractional portion is omitted (truncated)  and only the integer portion is retained)
+
+54. What is meant by truncation? 
+	(rounding of to zero)
+
+55. Are true and false keywords? 
+	(yes)
+
+56. What is numeric promotion? 
+	(data of smaller magnitude is placed in a memory location of larger size)
+
+57. What is the difference between the prefix and postfix forms of the ++ operator?
+	 (prefix ++ first increment and then assign, postfix ++ first assign and then increment)
+
+58. What are the rules associated with the usage of underscore in a literal?
+	(ans- it should not appear at the beginning or ending of a number, adjacent to decimal point, prior to f or L suffix) 
+
+59. What is meant by “Java is a strongly typed language”? 
+	(ans- every variable must have data type, every variable must be assigned a value of compatible type)
+
+60. Give the implicit upcasting chart or numeric promotion chart? 
+Ans-
+ 
+61. Which Java operator is right associative? 
+	(=)
+
+62. Can a double value be cast to a byte? 
+	(yes)
+
+63. Express double a = 123.45 in scientific notation? 
+	(ans- double a = 1.2345e2)
+
+64. What is the difference between char literal and string literal? 
+	(char literal is enclosed within ‘ ‘,String literal is enclosed within “ ”)
+
+65. Can we use underscore in a literal? 
+	(ans- yes, but not the beginning or the ending)
+
+66. What is the difference between declaring a variable and defining a variable? 
+	(int a-declaring, a=100-defining)
+
+67. Can we create binary literals in Java?
+	(ans- yes from Java 1.7 onwards, 0b is the prefix)
+
+68. How do we make a project coded in Java a pure OOP project? 
+	(using wrapper classes)
+
+69. What is the role of wrapper classes in Java? 
+	(make java purely object orinted)
+
+70. What happens if a larger magnitude data is assigned to a value of a data type which cannot handle it? 
+	(overflow, loss of precision, error)
+
+71. Should type casting be performed explicitly? 
+	(yes)
+
+72. Does type casting reduce the precision of the data? 
+	(yes)
+
+73. Should numeric promotion be performed explicitly? 
+	(no)
+
+74. Does numeric promotion reduce the precision of the data? 
+	(no)
+
+75. What is the role of formats in data types? 
+	(convert real world data into binary form)
+
+76. What is a variable? 
+	(ans- reserved memory locations to store the values)
+
+77. What are the two types of variables available in Java?
+	(ans- primitive variables and reference variables or local variables instance variables static variables)
+
+78. How is a negative number stored in Byte data type?
+	(ans- in 2’s compliment)
+
+79. How is a negative number stored in short data type?
+	(ans- in 2’s compliment)
+
+80. How is a negative number stored in int data type?
+	(ans- in 2’s compliment)
+
+81. How is a negative number stored in long data type?
+	(ans- in 2’s compliment)
+
+82. What is the range of char? 
+	(ans- 0 to 65535)
+
+83. What is a literal? 
+	(ans- it is a fixed value which is assigned to a variable)
+
+84. What does a prefix 0 indicate in a literal?
+
+85. What does a prefix 0x indicate in a literal?
+
+86. How do we display a \ in Java? 
+	(ans- char a = ‘\\’)
+
+87. How do we display “ in Java? 
+	(ans- char a = ‘\”’)
+
+88. How do we display ‘ in Java? 
+	(ans- char a = ‘\’’)
+
+89. Do we have unsigned integer format in Java?
+	(ans- not upto java 1.7, in java 1.8 int and long have unsigned format)
+
+90. Can we use the float data type to hold the precise values such as currency?
+	(ans- no)
+
+91. Can we use the double data type to hold the precise values such as currency?
+	(ans- no)
+
+92. What is the default value of long? 
+	(ans – 0L)
+
+93. What is the default value of double? 
+	(ans – 0.0)
+
+94. What is the default value of char? 
+	(ans – ‘\u0000’)
+
+95. How is a binary literal created in Java? 
+	(ans- int a = 0b1110)
+
+96. Identify valid and invalid literals?
+
+long creditCardNumber = 1234_5678_9012_3456L;
+
+long socialSecurityNumber = 999_99_9999L;
+
+float pi =  3.14_15F;
+
+long hexBytes = 0xFF_EC_DE_5E;
+
+long hexWords = 0xCAFE_BABE;
+
+long maxLong = 0x7fff_ffff_ffff_ffffL;
+
+byte nybbles = 0b0010_0101;
+
+long bytes = 0b11010010_01101001_10010100_10010010;
+// Invalid: cannot put underscores
+// adjacent to a decimal point
+
+float pi1 = 3_.1415F;
+// Invalid: cannot put underscores 
+// adjacent to a decimal point
+
+float pi2 = 3._1415F;
+// Invalid: cannot put underscores 
+// prior to an L suffix
+
+long socialSecurityNumber1 = 999_99_9999_L;
+// OK (decimal literal)
+
+int x1 = 5_2;
+// Invalid: cannot put underscores
+// At the end of a literal
+
+int x2 = 52_;
+// OK (decimal literal)
+
+int x3 = 5_______2;
+// Invalid: cannot put underscores
+// in the 0x radix prefix
+
+int x4 = 0_x52;
+// Invalid: cannot put underscores
+// at the beginning of a number
+
+int x5 = 0x_52;
+// OK (hexadecimal literal)
+
+int x6 = 0x5_2; 
+// Invalid: cannot put underscores
+// at the end of a number
+
+int x7 = 0x52_;
+
+

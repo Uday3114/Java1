@@ -1,0 +1,59 @@
+Set 18
+
+1.	What does network programming mean?
+	(Establishing a connection between a process in one sys to a process in another sys or a process in one sys with another process in same sys is called n/w programming.)
+
+2.	In which package are the collection of classes and interfaces required to provide low level communication details present?
+
+3.	Which are the two protocols that java.net package supports?
+
+4.	Which protocol does java.net package support for wired communication?
+
+5.	Which protocol does java.net package support for wireless communication?
+
+6.	What is the role of ServerSocket class in java?
+
+7.	What is the role of Socket class in java?
+
+8.	Explain the process of socket programming?
+
+9.	What does the accept() method on the server side return?
+
+10.	What detail should be provided while instantiating a ServerSocket object on the server side?
+
+11.	 What detail should be provided while instantiating a Socket object on the client side?
+
+12.	What is the role of getLocalPort() method?
+
+13.	What is the role of accept() method?
+
+14.	What is the role of setSoTimeout() method?
+
+15.	What is the role of bind() method?
+	(automatic binding of datainputsteam to dataoutputstream)
+
+16.	Is TCP a two way networking protocol?
+
+17.	How does the client obtain a Socket object?
+
+18.	How does server obtain a Socket object?
+
+19.	What is the difference between program and process?
+
+20.	What is the difference between process and task?
+
+21.	Why is the port number required along with the IP address for the client to establish connection?
+
+22.	What is a port?
+
+23.	Is a port logical or physical entity?
+
+24.	How long does the server wait for the client to establish connection?
+
+25.	What is multitasking?
+
+26.	How is multitasking different from multiprocessing?
+
+27.	How can the IP address of local machine be obtained?
+
+28.	What type of exception may occur during networking?

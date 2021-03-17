@@ -1,0 +1,133 @@
+﻿Set -4
+
+1.	When should an array data structure be used?
+	(numerous data of same type has to be stored)
+
+2.	What is an advantage of an array data structure?
+	(creation is simple, storing data using loops is simple, accessing the stored data is simple)
+
+3.	What is the disadvantage of an array data structure?
+	(arrays demand contiguous memory, cant increase or decrease the size, can store only homogeneous data. All these [problems can be overcome using collections)
+
+4.	Who creates arrays in Java and where? 
+	(jvm creates on the heap)
+
+5.	What are the different types of arrays in Java? 
+	(1-d, 2-d, 3-d, …… n-d: regular and jagged)
+
+6.	Design an array data structure to collect marks of 100 students of a class? 
+	(int a[] = new int[100])
+
+7.	Design an array data structure to collect marks of students in 5 classes each with 100 students? 
+	(int a[][] = new int[5][100])
+
+8.	Design an array data structure to collect marks of students in 3 schools each with 5 classes each with 100 students? 
+	(int a[][][] = new int[3][5][100]) 
+
+9.	Design an array data structure to collect marks of students in 3 schools with first school having 5 classes second school having 4 classes third school having 3 classes. 
+	Number of students in each classes is given below
+
+		First School
+		Class	Number of students
+		1	3
+		2	4
+		3	2
+		4	1
+		5	5
+
+		Second School
+		Class	Number of students
+		1	1
+		2	3
+		3	4
+		4	2
+
+		Third School
+		Class	Number of students
+		1	2
+		2	3
+		3	4
+	
+	
+
+10.	Design an array data structure to collect data of 3 Banks with following number of branches and customers.
+
+		First Bank
+		Branch	Number of Customer
+		1	2
+		2	1
+		3	3
+		4	5
+		5	4
+
+		Second Bank
+		Branch	Number of Customer
+		1	4
+		2	1
+		3	2
+		4	3
+
+		Third Bank
+		Branch	Number of Customer
+		1	3
+		2	2
+		3	4
+
+11.	 What is the advantage of jagged array data structure? 
+	(in real life the data is not regular rather it is jagged, therefore jagged array data structure represents the real world scenario much closely and better than the regular arrays)
+
+12.	 Create an array of 5 person object? 
+	(Person p[] = new Person[5])
+
+13.	 What are the exceptions associated with arrays? 
+	(ArrayIndexOutOfBoundsException, NegativeArraySizeException, ArrayStoreException)
+
+14.	Can array be used without initialization? 
+	(yes because it is created on the heap)
+
+15.	Are arrays objects in Java? 
+	(yes)
+ 
+16.	What are the default values associated with an array?
+	(depends on the data type.int,byte,short,long array-0; char-blank,float-0.0,boolean -false)
+
+17.	Who deallocates memory of an array? 
+	(garbage collector)
+
+18.	Are arrays primitive data types? 
+	(no they are objects)
+
+19.	Can an array grow in size or shrink in size after they are created? 
+	(no it does not grow and shrink in size during execution)
+
+20.	What is the default value present in char array? 
+	(\u0000)
+
+21.	What is the default value present in objects array? 
+	(null)
+
+22.	What is meant by buffer overrun?
+	(Attempt to access a memory location beyond the stipulated limit.) 
+
+23.	What are most famous internet worms that were designed using buffer overrun? 
+	(ans- Morris worm, code red worm, scammer worm.In java worms cannot be designed because exception occurs if any attempt is made to go beyond the array boundary)
+
+24.	Does buffer overrun occur in java? Why? 
+	(no, because java arrays are bound checked)
+
+25.	Can 1-dimensional arrays be printed directly? 
+	(no)
+
+26.	Can 2-dimensional arrays be printed directly?
+	 (no)
+
+27.	What facility is available in java to directly print 1-dimensional arrays? 
+	(loops)
+
+28.	What facility is available in java to directly print 2-dimensional arrays? 
+	(nested for loops)
+
+29.	What facility is available in Java to directly print other user defined objects?
+	(toString())
+
+

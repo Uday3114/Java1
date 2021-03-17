@@ -1,0 +1,82 @@
+Set-16
+
+1.	What is meant by persistent data? 
+	(such a data that is saved on hard disk)
+
+2.	Why is a persistent data called a persistent data? 
+	(because any data that is stored on hard disk would permanently remain, eventhough there is no power supply hence data is said to be persistent)
+
+3.	What is a stream? 
+	(series of bytes)
+
+4.	Which are the three streams that get created automatically? 
+	(system.out, system.in, system.err)
+
+5.	Which are the classes related to byte streams? 
+	(input stream, output stream)
+
+6.	Which are the classes related to character stream? 
+	(reader, writer)
+
+7.	Which are the classes related to object stream?
+	 (objectinputstream, objectoutputstream)
+
+8.	How many bit are read and written using InputStream and OutputStream classes? 
+	(8-bits)
+
+9.	How many bit are read and written using Reader and Writer classes? 
+	(16-bits)
+
+10.	How many bit are read and written using ObjectInputStream and ObjectOutputStream classes? 
+	(depends on object size)
+
+11.	What are the methods of filtering data? 
+	(buffering, checksumming)
+
+12.	What are the exceptions that may occur during IO operations? 
+	(IO exception, EOFException, UnknownHostException, ZipException)
+
+13.	What is meant by buffering? 
+	(storing the stream of bytes on the RAM is called buffering)
+
+14.	What is the advantage of buffering? 
+	(it improves the speed of io operation by reducing the number of hard disk hits)
+
+15.	What is a default buffer size? 
+	(512 bytes but it can be altered using a constructor)
+
+16.	What is meant by flushing and when is it used? 
+	(flushing refers to the process of forcefully sending the data present in the buffer to the hard disk. It should be done when the buffer is not filled to its fullest capacity)
+
+17.	In which package are the Stream related classes present? 
+	(java.io package)
+
+18.	What are the problems with FileInputStream class? How has it been overcome using FileReader? 
+	(class notes- difference between them)
+
+19.	How do you verify if the given path is valid or invalid? 
+	(exists())
+
+20.	How do you verify if in the given valid path a file or folder is present? 
+	(isFile())
+
+21.	What are the possible sources of input to a program? 
+	(console, file, database, network)
+
+22.	What are the possible destinations to which output can be sent? 
+	(console, file, database, network)
+
+23.	To which stream is the console input connected? 
+	(System.in)
+
+24.	To which stream is the console output connected? 
+	(System.out)
+
+25.	How can we write data into the console output stream? 
+	(System.out.println() or System.out.print())
+
+26.	How can we read data from console input stream? 
+	(Scanner(System.in))
+
+27.	Can the program transfer data from any input source to any output source?
+	 (yes)

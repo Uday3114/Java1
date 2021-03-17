@@ -1,0 +1,177 @@
+Set-8
+
+1.	Can we have two constructors with the same name, same number of arguments and same type of arguments? 
+	(yes provided order is different)
+
+2.	What happens if we don’t explicitly provide a constructor in our class? 
+	(java compiler adds default constructor(zero parameterized constructor) inside which a call to super class constructor is present)
+
+3.	Who inserts a no argument constructor into our class? 
+	(java compiler)
+
+4.	When does the no argument constructor get inserted into our class? 
+	(if our class does not contain any other constructor)
+
+5.	What is the no argument constructor also called as? 
+	(default constructor)
+
+6.	Whom does the no argument constructor of our class implicitly call? 
+	(super class constructor)
+
+7.	Can we use access modifier in a constructor declaration? 
+	(yes)
+
+8.	What is the difference between parameters and arguments? 
+	(Dog d = new Dog(“Lobo”, “Bulldog”, 1234)--- Lobo, Bulldog, 12324 are arguments(Actual Parameters)
+	Public Dog(String name, String breed, int cost)--- name, breed, cost are parameters)(Formal Parameters)
+
+9.	What relation must hold good between parameters and arguments? 
+	(numbers, data types and order should match)
+
+10.	Can we pass a method into another method as a parameter? 
+	(yes)
+
+11.	How can we pass a method into another method as a parameter? 
+	(using lambda expression)
+
+12.	When does a parameter shadow the class field? 
+	(when parameter name and instance variables name are same)
+
+13.	How can shadowing problem be resolved? 
+	(using this keyword)
+
+14.	Is it compulsory to have a constructor within a class? 
+	(yes, but for programmer it is not compulsory. From the point of view of the class, it is compulsory to have one)
+
+15.	Can we overload constructors? 
+	(yes)
+
+16.	What is meant by constructor chaining?
+	 (the process of child class constructor calling its super constructor is called constructor chaining. Achieved using super())
+
+17.	What is the return type of a constructor? 
+	(constructors do not have return type)
+
+18.	What does the constructor return? 
+	(it returns the address of object which would normally collected in a reference variable)
+
+19.	Does the compiler include default constructor if the class already contains a user defined constructor? 
+	(no)
+
+20.	How can local chaining of constructors be achieved? 
+	(using this())
+
+21.	Which construct must be used to achieve local chaining? 
+	(this())
+
+22.	Does every constructor call its superclass constructor? 
+	(yes, provided this() is not there)
+
+23.	When is an implied super() not included in each constructor? 
+	(if this() is explicitly included)
+
+24.	Can super() have parameters in it? 
+	(yes, however if super() calls object class then it is not possible)
+
+25.	If there are multiple constructors in the superclass then which constructor does super() call? 
+	(default constructor)
+
+26.	Why is a constructor called a constructor? 
+	(It is the constructor that converts an empty object into an meaningful object by assigning values to the instance variables. jvm only allocates memory, constructor constructs by giving values, 
+	so it is called constructor(house-home example))
+
+27.	What is a role of default constructor? 
+	(the default constructor within its body would have a call to the super class constructor. The super class constructor would initialize the instance variables to default values)
+
+28.	What is the difference between constructor and ordinary methods? 
+	(Constructors have the same name as that of the class. Methods do not have the same name as that of the class. Constructors primary role is to construct the object, 
+	Method primary role is to exhibit the behavior of the object. Constructor does not have return type, method has a return type. For constructor a class must necessarily 
+	contain atleast one constructor, method need not. Constructor is a setter, method is not a setter. Constructor does not participate in inheritance, method participate in inheritance. 
+	Constructors are called during object creation, methods are called after object creation. Super() and this() can be used only inside a constructor. Constructors cannot be abstract, 
+	can be abstract. Constructors cannot be final, cannot be static, cannot be native, cannot be synchronized)
+
+29.	What are the operations that a constructor performs? 
+	(normally initialization i.e construction of an object)
+
+30.	Can constructors be abstract? 
+	(no)
+
+31.	Can constructors be final? 
+	(no)
+
+32.	Can constructors be native? 
+	(no)
+
+33.	Can constructors be static? 
+	(no)
+
+34.	Can constructors be synchronized? 
+	(no)
+
+35.	Can constructors be public? 
+	(yes)
+
+36.	Can constructors be private? 
+	(yes. If in case it is made private then it would enforce singleton design pattern)
+
+37.	Can constructors be protected? 
+	(yes)
+
+38.	Can constructors be default? 
+	(yes)
+
+39.	What is the difference in the use of “this” by a constructor and an ordinary method? 
+	(this in a constructor plays two role. i. performs local chaining and ii. resolving shadowing. This in an ordinary method resolves ambiguity)
+
+40.	What is the difference in the use of “super” by a constructor and an ordinary method? 
+	(in ordinary method super is used to access a super class variable which has same name as the subclass variables whereas in case of constructors along with above use of 
+	super enables constructor chaining)
+
+41.	When we create a class such as public class Example{ } what extra additions would be performed by the compiler automatically? 
+
+(public class Example extends Object
+{
+		public Example()
+		{
+			Super();
+}
+})
+
+42.	Can constructors be inherited? 
+	(no)
+
+43.	Can ordinary methods be inherited?
+	 (yes)
+
+44.	How is constructor chaining achieved in java? 
+	(using super())
+
+45.	How are this() and super() used with constructors? 
+	(this() is for local chaining and super() is for constructor chaining)
+
+46.	What is the access modifier of the default constructor? 
+	(same as class to which it belongs to)
+
+47.	What happens when a constructor is declared as private? 
+	(it results in singleton design pattern)
+
+48.	What is a constructor in java? 
+	(constructor is a specialized setter which performs initialization)
+
+49.	Why do we require overloaded constructors in java? 
+	(when different initialization is required for different objects)
+
+50.	Does a class inherit the constructors of its superclass? 
+	(no)
+
+51.	Can a top level class be private or protected? 
+	(it can’t be both. It should be either public or default)
+
+52.	What type of parameter passing does Java support? 
+	(pass by value, pass by reference)
+
+53.	Primitive data types are passed by reference or pass by value? 
+	(pass by value)
+
+54.	Objects are passed by value or by reference? 
+	(pass by reference)`

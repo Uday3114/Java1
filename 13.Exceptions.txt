@@ -1,0 +1,232 @@
+			Set -13
+
+1.	What are exceptions? 
+	(refer to mistakes that occur during the execution time of an app due to faulty inputs provided by the programmer.)
+
+2.	What happens if exceptions are not handled? 
+	(it would result in abrupt termination of the app due to the exception object reaching the default exception handler)
+	
+3.	Does C language support exception handling? 
+	(no)
+
+4.	Does C++ language support exception handling? 
+	(yes but not robust)
+
+5.	Does Java language support exception handling? 
+	(yes)
+
+6.	What is meant by exception handling? 
+	(it refers to process of managing the exception object that gets generated in a manner that it does not result it abrupt termination )
+
+7.	Are exceptions detected during compilation time? 
+	(no)
+
+8.	Are exceptions detected during execution time? 
+	(yes)
+
+9.	What is an error? 
+	(errors are mistakes occur during execution time due to faulty coding. Cannot be handled using try and catch)
+	
+10.	What is the difference between exception and error? 
+	(exceptions occur due to faulty inputs, can be managed using try and catch, can be prevented from abrupt termination Occurs due to faulty coding, 
+	cannot be caught, cannot be managed using try catch, cannot be prevented from abrupt termination)
+
+11.	Why are exceptions caused normally in a program? 
+	(due to faulty inputs given by programmer)
+	
+12.	Why do errors occur normally in a program? 
+	(due to faulty coding of app by developer)
+
+13.	What is the difference between compile time error and run time error? 
+	(compilation time errors are syntax errors which compiler detects (missing ; undefined symbol etc) whereas execution time errors are such errors which 
+	compiler does not detect , they surface during execution time(StackOverFlowError , OutOfMemoryError)
+
+	compile time errors occur due to improper use of the language whereas execution type error occurs due to improper logic used in the app)
+
+14.	Which construct is used in Java for exception handling? 
+	(try, throw, catch , throws, finally)
+	
+15.	What is a role of try keyword in Java? 
+	(a set of statements which can possibly result in run time mistake are put within try block)
+	
+16.	What is a role of catch keyword in Java? 
+	(If any exception object is generated in the try block then it would be caught by the catch block.)
+
+17.	What is a role of throw keyword in Java? 
+	(it is used for rethrowing exception object and hence forcefully enables a handled exception object to trickle down the stack hierarchy )
+	
+18.	What is a role of finally keyword in Java?
+	(The most critical statements (Statements releasing resources, present at the end of a method must be enclosed within the finally block))
+	
+19.	What is a role of throws keyword in Java? 
+	(used in ducking, it is also used to alert its caller that it could possibly throw exception )
+
+20.	Does Java language provide any exception handler? 
+	(yes, default exception handler)
+
+21.	If Java language provides exception handler then why should programmer handle exceptions? 
+	(Because the default exception handler provided by java ensures only system safety. It does not ensure termination of connections and release of acquired resources.)
+	
+22.	Who creates the exception object? 
+	(the method in which a run time mistake has occurred)
+	
+23.	What would be present in an exception object? 
+	(the type of exception, the line no on which exception occurred, stack trace )
+	
+24.	Whom is the exception object given to soon after its creation? 
+	(run time system)
+
+25.	What is run time system? 
+	(a part of jvm which deals with exception handling)
+
+26.	What is a role of run time system in exception handling?
+	(It receives the exception object from the method and verifies if a user defined exception handler is present. If the user defined exception handler is 
+	present then the exception object would be handed over to it. Otherwise the exception object would be handed over to the default exception handler) 
+
+27.	Can we have multiple catches for a single try block? 
+	(yes)
+
+28.	Why should an Exception type reference be placed at the bottom of multiple catch blocks? 
+	(In order to ensure that if the specific catch blocks present at the top of the catch hierarchy failed to handle an exception then the generic catch present at the 
+	bottom would be able to handle it. By doing this 1) the exception object is prevented from reaching the default exception handler and hence prevents abrupt termination 
+	2) By using log4j tool in the generic catch block , a log report can be sent to the developer which would be useful to upgrade the app.)
+
+29.	How is it that Exception reference can catch (refer to) all types of exceptions? 
+	(Because in the exception hierarchy it is parent type. In java parent reference can refer to any child object. Hence the exception type reference can catch any of the child class objects.)
+	
+30.	What are checked exceptions? 
+	(They are such exception for which java compiler forces to handler it using a try catch block)
+
+31.	What are unchecked exceptions? 
+	(They are such exceptions which compiler does not force to handle)
+
+32.	Why should we not have exception type reference at the top of multiple catch blocks? 
+	(because it will catch all exception that are generated by the try block without giving any opportunity for the specific catch blocks present below it to catch the exception object)
+	
+33.	What is meant by ducking? 
+	(Process of a method passing on the exception object without handling it. Throws keyword is used for ducking)
+
+34.	What is meant by rethrowing? 
+	(process of method passing on the exception object down the stack hierarchy after handling it (throw throws keyword is used).)
+
+35.	What is the problem associated with throw keyword? How is it resolved? 
+	(statement below throw  is not executed, using finally keyword it can be resolved)
+
+36.	Is using throws compulsory in exception handling? 
+	(no but it is a good programming practice to caution the caller. not upto jdk 1.7 but since 1.8 if method ducks or if it re-throws then it has been made compulsory to use throws keyword)
+37.	How does the run time system respond in case of multiple method calls? 
+	(If the exception handler is not present in the method that generated the exception object then the rts does not send the exception object directly to the DEH. 
+	Rather the exception object would be allowed to trickle down the stack hierarchy till a handler is found in one of the methods (activation record). 
+	If no handler is found then the exception object would reach the default exception handler.)
+
+38.	Can you give an example for an exception? 
+	(ArithmeticException…..)
+
+39.	Can you give an example for an error? 
+	(stack overflow, OutOfMemory)
+
+40.	Is there any way in Java by which the finally block would not get executed? 
+	(system.exit(0))
+
+41.	When should a method duck an exception object? 
+	(if the designer has decided to)
+	
+42.	When should a method rethrow an exception object? 
+	(same as above)
+
+43.	Can we manually create exception objects? 
+	(yes)
+
+44.	Is a try-catch combination valid? 
+	(yes)
+
+45.	Is a try-catch-finally combination valid? 
+	(yes)
+	
+46.	Is a try-finally combination valid? 
+	(yes)
+
+47.	Is a catch-finally combination valid? 
+	(no)
+
+48.	Can we have a try block without any other block? 
+	(no)
+
+49.	Can we have a catch block without any other block? 
+	(no)
+
+50.	Can we have a finally block without any other block? 
+	(no)
+
+51.	Can we have try-catch-finally within a try block? 
+	(yes)
+
+52.	Can we have try-catch-finally within a catch block? 
+	(yes)
+
+53.	Can we have try-catch-finally within a finally block? 
+	(yes)
+
+54.	Name a few checked exceptions? 
+	(FileNotFoundException….)
+
+55.	Name a few unchecked exceptions ?
+	(ArithmeticException)
+
+56.	Which class is the superclass of Exception? 
+	(Throwable)
+
+57.	Which class is the superclass of Error? 
+	(Throwable)
+
+58.	What is the role of getMessage() in exception handling? 
+	(it enables programmer to create custom exception)
+
+59.	What is the role of printStackTrace() in exception handling?
+	(It gives the developer an idea about the method in which exception occurred and also the subsequent propagation of the exception object )
+
+60.	Differentiate between throw and throws? 
+	(throw throws combination for rethrowing exception, throws for ducking :: throws is associated with a method whereas throw is associated 
+	with an object reference :: throws appears in the signature of the method whereas throw appears in the body(definition) of the method)
+	
+61.	What is meant by LSP? 
+	(lisko Substitution Principle)
+	
+62.	What is try region also called as? 
+	(ans- guarded region)
+
+63.	What is catch region also called as? 
+	(ans- handling region)
+
+64.	What is finally region also called as? 
+	(ans- cleanup region)
+
+65.	What are the rules of exception that must be followed during inheritance? 
+	(lsp rules)
+
+66.	Can the base class method and derived class method throw different types of exception? 
+	( 1)yes provided is a relationship exists. 
+	2) Now Is-a need to exist provided the exceptions being thrown are runtime exception)
+
+67.	If the base class method throws an exception is it mandatory for the derived class method also to throw an exception? 
+	(no)
+
+68.	How do we create custom exceptions? 
+	(By sub classing exception class , by overriding public string getMessage() to provide suitable diagnostic message)
+
+69.	If I want an object of my class to be thrown as an exception object then what should I do? 
+	(class should be subclass of exception class)
+
+70.	If my class already extends from some other class what should I do if I want an instance of my class to be thrown as an exception object? 
+	(not possible, multiple inheritance is not permitted)
+
+71.	What are the different ways to manage exceptions? 
+	(ans- duck, rethrow, handle)
+
+72.	If I write return at the end of the try block, will the finally block still execute? 
+	(yes)
+
+73.	What is the difference between final, finally and finalize()? 
+	(final-used to create constants , used to avoid inheritance
+	Finally- is a exception handing control construct in which most critical statements are placed it is called clean up region in exception handling)
+

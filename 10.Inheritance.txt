@@ -1,0 +1,295 @@
+Set-10
+
+1.	What is the advantage of inheritance? 
+	(Polymorphism, code re-usability hence enhances profits)
+
+2.	What is a parent class also called as? 
+	(Super class, base class)
+
+3.	What is a child class also called in java? 
+	(Derived class, sub class)
+
+4.	Which relationship must be satisfied to achieve inheritance in java? 
+	(Is-a)
+
+5.	What is the meaning of extends keyword in java and when is it used? 
+	(Is-a, used during inheritance)
+
+6.	Can classes be circularly related in java?
+
+7.	How do constructor execute in case of inheritance?
+	(Constructors do not get inherited but they do get executed through constructor chaining(super()). This rule is made in order to preserve encapsulation)
+
+8.	What is the use of inheritance in java?
+	(Code reusability hence profitability)
+
+9.	Does java support multiple inheritance explain? 	
+	(no, diamond shape problem and would lead to ambiguity)
+	
+10.	Does inheritance promote “is-a” relationship or “has-a” relationship? 
+
+11.	Why does java not support multiple inheritance? Explain with example?
+
+12.	Can constructors be inherited in java?
+	(No, affects data encapsulation)
+
+13.	Can we reduce the visibility of the inherited method? 
+	(no i.e access privileges cannot be reduced)
+
+14.	Is inheritance loose bound or tight bound? 
+	(Both, tight bound- child ref is created  to child obj, loose bound- parent ref to child object)
+	
+15.	Is composition loose bound or tight bound? 
+	(tight bound)
+
+16.	Is it compulsory for the method to be inherited for it to be overridden? 
+	(yes)
+
+17.	Can we override a private method? Why? 
+	(no, because we can’t inherit)
+
+18.	What is a co-variant return type? 
+	(from jdk-1.5, such a facility in which method in parent class can have different return type and the corresponding overriden method in the child class can have 
+	a different return type provided is-a relationship is maintained between them)
+
+19.	What actually happens in inheritance? 
+	(inheritance is the process of one object acquiring the properties of another, using inheritance information is made manageable in hierarchical order)
+
+20.	Using extends keyword can a subclass inherit all the properties of super class? 
+	(no, private and constructors cannot be inherited.)
+
+21.	How is instanceof operator used in inheritance? 
+	(Animal-Dog example)
+
+22.	Can a subclass have any number of superclasses? 
+	(no, only 1)
+
+23.	Can a superclass have any number of subclasses? 
+	(yes)
+
+24.	Do both properties and behaviors get inherited in java? 
+	(yes but private and constructers don’t get inherited)
+
+25.	Which is the superclass of all classes in java? 
+	(object)
+
+26.	Which is the superclass of Object class in java? 
+	(no super class)
+
+27.	Does java support multi-level inheritance? 
+	(yes)
+
+28.	In which package is the Object class present? 
+	(java.lang)
+
+29.	What does the Object class contain? 
+	( behaviors required by all sub classes)
+
+30.	In the class hierarchy which classes are more generalized in behavior? 
+	(higher in the hierarchy)
+
+31.	In the class hierarchy which classes are more specialized in behavior?
+	(bottom of the hierarchy)
+
+32.	Can we have a method in a subclass with a same name as in the superclass? 
+	(yes)
+
+33.	Can we have a variable in a subclass with a same name as in the superclass? 
+	(yes)
+
+34.	Can we declare new fields in the subclass which are not there in the superclass? 
+	(yes)
+
+35.	Why does not java permit constructor inheritance? 
+	(because it affects encapsulation)
+
+36.	What is the difference between hiding, overriding and shadowing? 
+	(overriding static-hiding and overriding normal-overriding)
+
+37.	Can we declare new methods in the subclass which are not there in the superclass? 
+	(yes, specialized methods)
+	
+38.	Can a subclass access private members of the superclass directly? 
+	(no)
+	
+39.	What are the ways in which private members of a superclass can be accessed? 
+	(through nested class, through protected and public & default members of same class)
+
+40.	 What is not possible in java inheritance? 
+	(private members are not  inherited, constructors cannot be inherited, subclass can have only one super class)
+
+41.	Comment on the visibility of private? 
+	( accessible only members of same class)
+	
+42.	Comment on the visibility of protected?
+	(members of same class and also to the derived class[same packages and other packages])
+
+43.	Comment on the visibility of default? 
+	(Accessible in same class, other class [in same package]).
+
+44.	Comment on the visibility of public?
+	(accessible within same class, another class[same package ,another package]).
+
+45.	What is an alternative to inheritance? 
+	(delegation)
+
+46.	How is delegation better when compared to inheritance? 
+	(inheritance forces subclass to accept all methods of the super class lengthy complicated hierarchy of inheritance could make programming complex large inheritance chains 
+	can also lead to hard-to-maintain code however delegation makes write more code not supported by all programming languages, no dynamic polymorphism, does not promote reusability)
+	
+47.	Which relationship does inheritance implement? 
+	(is-a)
+
+48.	Who promotes “is-a” relationship? 
+	(inheritance)
+
+49.	 Who promotes “has-a” relationship? 
+	(aggregation and composition)
+
+50.	What is meant by implicit typecasting? 
+	(upcasting).
+
+51.	What is meant by downcasting?
+
+52.	What is meant by upcasting?
+
+53.	How many levels above the current level would the super keyword enable to access in case of inheritance? 
+	(one level above)
+
+54.	Which constructor of the superclass gets called automatically from the subclass? 
+	(default)
+
+55.	Can we call the parameterized constructor of the subclass from the baseclass? 
+	(no)
+
+56.	Can a subclass somehow access the private members of the superclass? 
+	(yes)
+
+57.	What is constructor chaining?
+	(process of sub class constructor calling its super class constructor by using super() method )
+	
+58.	Can a parent reference point to the child object? 
+	(yes)
+	
+59.	What are the advantages of parent reference to the child object? 
+	(loose coupling, polymorphism and makes code compact)
+
+60.	What is meant by loose coupling? 
+	(parent reference to child object)
+
+61.	What is meant by tight coupling? 
+	(child reference to child object)
+
+62.	Is parent reference to child object loose coupling or tight coupling? 
+	(Loose coupling)
+
+63.	What is the limitation associated with parent reference to child object? 
+	(can’t access specialized methods directly in subclass)
+
+64.	How can the limitation of parent reference to child object be overcome? 
+	(downcasting)
+
+65.	How can we prevent the inheritance of a class? 
+	(using final keyword)
+
+66.	Why is cyclic dependency not permitted in java? 
+	(coz it never exist in real life and never required in programming)
+
+67.	What are the advantages of method overriding? 
+	(enables us to tailor make base class to suit to new requirements of the derived class. In general it enables the derived class to tailor the base class to suit to its new requirement)
+
+68.	Why are private members not inherited? 
+	(to promote encapsulation) 
+
+69.	Why are constructors not inherited? 
+	(to promote encapsulation)
+
+70.	When a derived class object is created, why does the constructor of base class get called? 
+	(due to constructor chaining)
+
+71.	What is meant by diamond shape problem? 
+	(multiple inheritance problem is also called as diamond shape problem)
+
+72.	Does java support multi-level inheritance? Why? 
+	(yes, because it exists in real life)
+	
+73.	How is has-a relationship implemented in java? 
+	(composition, aggregation and delegation)
+	
+74.	What is composition? 
+	(it is a means of implementing tight bound has-a relationship)
+
+75.	What is aggregation? 
+	(it is a means of implementing loose bound has a relationship)
+
+76.	Can we access the composite object while the enclosing object is accessible? 
+	(yes)
+
+77.	Can we access the aggregate object while the enclosing object is accessible? 
+	(yes)
+
+78.	Can we access the composite object while the enclosing object is not accessible? 
+	(no)
+
+79.	Can we access the aggregate object while the enclosing object is not accessible? 
+	(Yes)
+
+80.	Can you identify composite objects in this interview room? 
+
+81.	Can you identify aggregate objects in this interview room?
+
+82.	Which classes in the UML diagram must be made final? 
+	(leaf nodes)
+
+83.	Which notation is used to represent composite objects in UML? 
+	(diamond with colored inside)
+
+84.	Which notation is used to represent aggregate objects in UML?
+	(only diamond without coloring)
+
+85.	Why should the composite objects get destroyed when the enclosing object is destroyed? 
+	(that is the way it is in real life)
+
+86.	Why should the aggregate objects not get destroyed when the enclosing object is destroyed? 
+	(that is the way it is in real life)
+
+87.	Can we represent both “is-a” and “has-a” relationship in a single UML? 
+	(yes)
+
+88.	Does the delegation model implement “is-a” relationship? 
+	(no)
+	
+89.	Does the delegation model implement “has-a” relationship? 
+	(yes)
+
+90.	What happens if the class is made final? 
+	(can’t be inherited or sub classed)
+
+91.	What happens if the method is made final? 
+	(can’t be overriden)
+
+92.	What happens if the variable is made final? 
+	(acts as constant)
+
+93.	Can you name an inbuilt class which is final?
+	(ans-String class) 
+
+94.	What is the casting from a general to a more specific type called as?
+	(downcasting)
+
+95.	What is the casting from a specific to a more general type called as?
+	(upcasting)
+
+96.	What is the difference between primitive numeric type casting and casting between object references? 
+	(in primitive numeric typecasting we have only “typecasting”. We do not have upcasting and downcasting. However in casting of objects type we have upcasting and downcasting)
+
+
+
+
+
+
+
+
+
+
+

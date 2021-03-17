@@ -1,0 +1,150 @@
+Set -6
+
+1.	What is an object also called as? 
+	(instance)
+
+2.	What is the default name of the object? 
+	(no name)
+
+3.	How do we access an object? 
+	(through a reference or handle)
+
+4.	Why do we require a reference variable? 
+	(to refer to an object)
+
+5.	What are the contents of an object also called as? 
+	(instance variables)
+
+6.	What is a reference variable also called as? 
+	(handle)
+
+7.	Who allocates memory for the object? 
+	(JVM)
+
+8.	Where is memory for the object allocated? Why? 
+	(heap, because garbage collector has to collect it)
+
+9.	When is memory for an object allocated? 
+	(when new keyword is executed)
+
+10.	When is memory for an object deallocated? 
+	(when there is no more reference to an object)
+
+11.	What are the different types of segments on the RAM? 
+	(code, stack, static, heap)
+
+12.	Who allocates memory for the reference variables? 
+	(JVM)
+
+13.	Where is memory for reference variable allocated? Why? 
+	(stack inside activation record)
+
+14.	When is memory for reference variable allocated? 
+	(when control enters the method)
+
+15.	When is memory for a reference variable deallocated? 
+	(when control leaves the method)
+
+16.	Who allocates memory for the local variables? 
+	(JVM)
+
+17.	Where is memory for local variable allocated? Why? 
+	(in the stack and inside activation record)
+
+18.	When is memory for local variable allocated? 
+	(control enters the method)
+
+19.	When is memory for a local variable deallocated? 
+	(when control leaves the method)
+
+20.	What does 4000 represent? Value or address? 
+	(it depends on the type of variable which is holding it.)
+
+21.	What happens when assignment operator is applied on two value type variables? 
+	(value in one variable to gets assigned to another)
+
+22.	What happens when assignment operator is applied on two reference type variables? 
+	(both references start pointing to the same object)
+
+23.	What is the difference between local variables and instance variables? 
+	(refer to class notes)
+
+24.	Why do we not create a reference to a local variable? 
+	(because local variables are already inside the stack and no reference is required to access it)
+
+25.	What are the default values associated with instance variables? 
+	(depends upon data types-0, 0.0, null etc)
+
+26.	What are the default values associated with local variables? 
+	(no default values, must manually be initialized.)
+
+27.	Can instance variables be used without initialization? 
+	(yes)
+
+28.	Can local variables be used without initialization? 
+	(no)
+
+29.	Can a Student object be cast to a double value using type casting? 
+	(no ,type casting can take place b/w primitive types, type casting can also take place b/w classes , however b/w a primitive type and a class type casting cannot take place)
+
+30.	What is the role of instanceof operator? 
+	(day-8 Demo example, instanceof operator enables a programmer to verify the class to which an object belongs to.)
+
+31.	What is a field variable? 
+	(instance variable is also called field variable)
+
+32.	What does the code segment contain? 
+	( program code)
+	
+33.	What does the stack segment contain? 
+	(local variables, reference variables, activation record
+
+34.	What does the static segment contain? 
+	(static variables, static blocks , static methods)
+
+35.	What does the heap segment contain? 
+	(instances or objects).
+
+36.	Is memory for a class allocated? Explain 
+	(yes, on the code segment it is allocated but not on the heap segment,only for object it is allocated on the heap.)
+
+37.	Which are the variable sized segments on the Ram? 
+	(stack and heap)
+
+38.	Which are the fixed sized segments on the Ram? 
+	(code and static)
+	
+39.	Why the variable sized segments are called so? 
+	(because their size shrinks and grows during program execution)
+
+40.	Why the fixed sized segments are called so? 
+	(because they don’t shrink and grow during program execution)
+
+41.	Why is the class called a “blueprint”? 
+	(Since the jvm looks at the class and creates the object)
+
+42.	Can an object have zero reference? 
+	(yes, anonymous object)
+
+43.	Can an object have one reference? 
+	(yes)
+
+44.	Can an object have more than one reference? 
+	(yes)
+
+45.	Can a local variable have a reference? 
+	(no)
+
+46.	Can we have a local variable with zero name? 
+	(no)
+
+47.	Can we have a local variable one name? 
+	(yes)
+
+48.	Can we have a local variable with many names? 
+	(no)
+
+49.	When does an active object become “garbage”? 
+	(when reference which were previously pointing to an object have stopped pointing to it. Such a garbage object would be collected by the garbage collector )
+
+

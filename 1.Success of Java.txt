@@ -1,0 +1,202 @@
+﻿Set-1
+1. What are the reasons for Java's success?  
+(portability, freely dl, open source) 
+
+2. What is WORA?  
+(Write Once Run Anywhere,it also means architecture neutral) 
+
+3. Why is Java called an Internet Programming language? 
+(Because of platform independence) 
+
+4. What is meant by platform independence? 
+(a software can execute on  all OS)
+
+5. What is meant by open source? 
+(open source software is such a software for which modifications and enhancements can not only be performed by the employees of the company but can also be performed by free lancers , 
+independent thinkers, employees of other companies etc.) 
+
+6. What is an assembler? 
+(software which converts assembly level to machine level) 
+
+7. What is a compiler? 
+(software which converts high level to machine level(c,c++) or byte codes(java complier)) 
+
+8. What was Java initially known as? 
+(C++++--, green, oak, )
+ 
+9. Who were the inventors of Java? 
+(James Gosling, mike Sheridan, Patrick norton) 
+
+10. Which company's product was Java initially? 
+(sun micro systems)  
+
+11. Which company's product is Java currently? 
+(oracle)  
+
+12. What is JVM? 
+(Java Virtual Machine which accepts byte code as its input and gives machine level code as its output. It is composed of JIT compiler, java interpreter and run time system.) 
+
+13. Is JVM platform dependent or independent? Why? 
+(yes, because it is coded in c) 
+
+14. What is a class file? 
+(which contains byte codes) 
+
+15. What is an intermediate code? 
+(is such a code which is neither high level nor machine level.It is also called as bytecode. It is given as an output by the java compiler.It would be provided as input to the jvm.) 
+
+16. What is class loader? 
+(later) 
+
+17. What is a byte code verifier? 
+(will be discussed later) 
+
+18. What is an interpreter? 
+(s/w which converts hll to mll. Until and unless a statement is interpreted and  executed the next statement would not be interpreted. It slows the speed of execution of a program) 
+
+19. What is the difference between compiler and interpreter?
+(C-program execution is fast, I-pgm execution is slow, C-all the statements present in the program are compiled, I-only the current statement is interpreted, 
+C-all the statements in pgm are loaded onto the ram, I-only current interpreted statement would be loaded onto the ram. ) 
+
+20. What is JIT? 
+(Just In Time Compiler) 
+
+21. What is JRE? 
+(it stands forJava Runtime Environment. It is a portion of the ram allocated by the OS for the execution of a java application(java app)) 
+
+22. Is Java a compiled or interpreted language? 
+(both compiled and interpreted language. It is a hybrid language) 
+
+23. What is run time system?
+(part of JVM) will be discussed later in exception 
+
+24. What is JDK?
+( it standsd for Java Development Kit. It consists of javac , class loader, byte code verifier , java libraries and the jvm.) 
+
+25. What is the latest version of Java available and when was it released? 
+(spiders, march 14, 2014) 
+
+26. Which is the next version of Java and when would it be released?
+(sept 2016) 
+
+27. How did Java drastically grow in features? 
+(because it was made open source) 
+
+28. What is the disadvantage of java?
+ (relatively slow compared to c++ and c)
+
+29. When was first version of Java officially released? 
+(1994) 
+
+30. Since when was Java unofficially available? 
+(1992) 
+
+31. Explain the architecture of Java. 
+(refer class notes) 
+
+32. What is meant by architecture neutrality?  
+(If a software is capable of executing on any os microprocessor combination then its said to be architecture neutral) 
+
+33. How is object file different from class file? 
+(O-Object file contains code in machine level,C-contains code in intermediate level,O-Object file is machine dependent, C-class file is machine independent.) 
+
+34. Is class file platform dependent?
+ (no) 
+
+35. Is object file platform dependent?
+(yes) 
+
+36. Can we have single JVM on a system which has multiple OS?
+(no,jvm is platform dependent and a single jvm cannot work with many os, each os would have a jvm of its own.)
+
+ 37. What is meant by a platform?
+(OS+machine=platform) 
+
+38. Comment on the speed of Java. 
+(slow) 
+
+39. What category of applications can be developed using Java? 
+(internet applications(Portable applications) which demand architecture neutrality)
+
+40. What is the single most important feature of Java that led to its success? 
+(portable)
+
+42. What is the difference between JDK and JVM?
+(JVM is a part of JDK)
+
+43. What is meant by loading? 
+(process of taking data from secondary memory to primary memory)
+
+44. What is meant by saving? 
+(process of taking data from primary memory to secondary memory)
+
+45. Why do we have two types of memories in our computer? 
+(because both have their own advantages and disadvantages-secondary memory is slow, inexpensive, bulky and non-volatile but primary memory is fast, expensive, compact and volatile)
+
+46. Why is the primary memory called as “main memory”?
+ (because if anything has to execute then it should on primary)
+
+47. Why is hard-disk called as the “secondary memory”? 
+(because it is not directly connected to microprocessor)
+
+48. What is a pointer and does Java support pointers?
+ (no) 	
+
+49. What is difference between Path and Classpath? 
+
+50. What environment variables do I need to set on my machine in order to be able to run         Java programs?
+
+51. What is an object file?
+(An object file is a file which contains the program in mll. It is in complete and hence cannot be ececuted.)
+
+52. What is an executable file?
+(An executable file is a file present in mll . It is complete because linking has been  performed and hence it can be executed. )
+
+53. Is an object file executable?
+(NO)
+
+54. Is an executable file executable?
+(YES)
+
+55. What is a linkage editor?
+(It is a software which links the object files with the required  lib files and creates an executable file )
+
+56. What is linking loader?
+(performs linking of object file with the required lib files and also loads the executable image on the ram.)
+
+57. What is an executable image?
+(an executable file when loaded onto the ram is called as executable image)
+
+58. What are library files?
+(Library files are predefined files present on the hard disk. The library files would be linked with the object file in order to obtain the executable file )
+
+59. Do library files contain code in HLL?
+(NO)
+
+60. Are library files machine dependent?
+(Yes)
+
+61. Why can’t we execute an object file?
+(incomplete)
+
+62. Can we send HLL code over internet? Comment. 
+(yes but due to security reasons it is not recommended)
+
+63. Can we send MLL code over internet? Comment.
+(Yes, however the mll code on the destination computer would execute if and only if the destination computer os and the src computer  os are the same )
+
+64. Can we send IL code over internet? Comment.
+(yes, since IL is machine independent it would execute on any destination computer irrespective of the os.)
+
+65. Why can’t we have a single JVM to work for all OS?
+(JVM is platform dependent)
+
+66. What are the reasons for java’s slowness?
+(a java program does not directly produce the machine code. Rather upon compilation it produces intermediate code. This intermediate code must be converted into machine code using jvm . 
+this slows down the execution process)
+
+
+
+
+
+

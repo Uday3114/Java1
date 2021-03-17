@@ -1,0 +1,115 @@
+Set-11
+
+1.	What is an abstract class? 
+	(no)
+
+2.	What is an abstract method? 
+	(no)
+
+3.	Is it compulsory for the abstract class to include abstract methods? 
+	(no)
+
+4.	Can abstract class be instantiated? 
+	(no)
+
+5.	Can abstract class be subclassed? 
+	(yes)
+
+6.	Is it compulsory for the subclass of an abstract class to provide all the method implementations? 
+
+7.	If the subclass of an abstract class do not provide all the method implementations then what must be done?
+	(such a subclass must be declared as abstract)
+
+8.	When should you consider using abstract classes in your project?
+	(Ans - You want to share code among several closely related classes, You expect that classes that extend your abstract class have many common methods or fields, 
+	or require access modifiers other than public (such as protected and private).
+
+	You want to declare non-static or non-final fields. This enables you to define methods that can access and modify the state of the object to which they belong.)
+
+9.	Can an abstract class have static variables? 
+	(yes)
+
+10.	Can an abstract class have static methods? 
+	(yes)
+
+11.	Can we have constructor within the abstract class? 
+	(yes)
+
+12.	What is a Concrete class? 
+	(concrete class is a class for which body exists)
+
+13.	Can we declare abstract class as final? 
+	(no)
+
+14.	Can an abstract class have a super class which is abstract? 
+	(yes)
+
+15.	Can an abstract class have a super class which is concrete? 
+	(yes)
+
+16.	Can an abstract class have a sub class which is abstract? 
+	(yes)
+
+17.	Can an abstract class have a sub class which is concrete? 
+	(yes)
+
+18.	Can a concrete class have a super class which is abstract?
+	 (yes)
+
+19.	Can a concrete class have a super class which is concrete? 
+	(yes)
+
+20.	Can a concrete class have a sub class which is abstract? 
+	(yes)
+
+21.	Can a concrete class have a sub class which is concrete? 
+	(yes)
+
+22.	Can we have a final abstract method? Why? 
+	(no, because abstract methods are incomplete and can’t use final. If declared final nobody can override)
+
+23.	Do abstract methods have method definition? 
+	(no)
+
+24.	Do abstract methods have method declaration? 
+	(yes)
+
+25.	Which design pattern do abstract classes promote?
+	(ans- template method design pattern)
+
+26.	Can an abstract class completely contain concrete methods? 
+	(yes)
+
+27.	Can a concrete class completely contain abstract methods? 
+	(no)
+
+28.	Can an abstract class contain main() method? 
+	(ans- yes)
+
+29.	When should we declare a method as abstract? 
+	(when in hierarchy we are not sure about method body)
+
+30.	What is the difference between pure abstract class and impure abstract class? 
+	(concrete method-pure abstract. A few concrete and few abstract-impure)
+
+31.	What is a pure abstract class also called as? 
+	(interface)
+
+32.	What is the advantage of abstract classes? 
+	(polymorphism)
+
+33.	Can you create an object of an abstract class? Why?
+	 (no, body won’t be there)
+
+34.	Can an abstract class be defined without any abstract methods? 
+	(yes)
+
+35.	Can an abstract class be treated as a template which is provided for further development? 
+	(yes)
+
+36.	What role does an abstract class enforce? 
+	(ans- abstraction)
+
+37.	Can we have an abstract variable? 
+	(ans- no)
+

@@ -1,0 +1,187 @@
+Set 2
+1.	Should a main() method be compulsorily declared in all java programs?
+	(yes [up to jdk1.6 a java program would execute without a main method from java 1.7 main method  is made a compulsion]  )
+
+2.	What is the return type of the main() method?
+	(void)
+
+3.	Why is the main() method declared static?
+	(so that the main method becomes access able to OS even without object creation)
+
+4.	What is the argument of main() method?
+	(String args[] which is a variable sized array(dynamic array))
+
+5.	Does the order of public and static declaration matter in main() method?
+	(no)
+
+6.	Can a source file contain more than one class declaration?
+	(yes)
+
+7.	What is meant by orientation?
+	(perspective, point of view)
+
+8.	What is meant by object orientation?
+	(looking at the worlds around us as a collection of objects )
+
+9.	Explain a few key points associated with an object oriented programming wrt the real world?
+	(5 points)
+
+10.	Is java an object oriented programming language?
+	(yes)
+
+11.	Is java a pure object oriented programming language?
+	(no)
+
+12.	Is C++ an object oriented programming language?
+	(yes)
+
+13.	Is C an object oriented programming language?
+	(no)
+
+14.	Which was the first object oriented programming language?
+	(simula)
+
+15.	Which is the first truly object oriented programming language? 
+	(smalltalk)
+
+16.	What was the style of programming which was popularly used in the industry before object oriented style came into existence?
+	(structured)
+
+17.	What is a class?
+	(Class is a blueprint, jvm looks at the class creates objects.Though a class does not exist in reality object exists in reality(Blueprint contractor example))
+
+18.	What is an object?
+	(Is a real world entity which has a physical existence.An object is created by the jvm by referring to the class)
+
+19.	Do classes have physical existence?
+	(NO)
+
+20.	Do objects have physical existence?
+	(YES)
+
+21.	What is meant by physical existence?
+	(if memory is allocated for an entity)
+
+22.	If both C++ and Java are OOPL, then why is Java so popularly used?
+	(Portability)
+
+23.	How are objects created in Java?
+	(new keyword)
+
+24.	Who creates objects in Java?
+	(JVM)
+
+25.	Which operator is used for object creation in Java?
+	(new)
+
+26.	 Can an object be created without a class?
+	(no)
+
+27.	How many objects of a class can be created?
+	(any number)
+
+28.	Comment on the properties of an object?
+	(also called has part of the object and is taken care by data types)
+
+29.	Comment on the behaviors of an object?
+	(refers to Does part of an object,managed in pgmin using methods.)
+
+30.	Can you identify objects in this interview room?
+
+31.	Can you identify the interaction between objects in this interview room?
+
+32.	Why is object orientation a good style of programming?
+	(solution to real world problem needs oops approach,it is close to real world in which live)
+
+33.	 When did the idea of object orientation emerge in the programming world?
+	(in 1980’2 the it industry widely came to the conclusion that structured programming is not good style of pgmin hence object oreientation was adopted 
+	as an alternative to structured programming.)
+
+34.	What is the default value of an object reference declared as an instance variable?
+
+35.	Why should we enclose main() method within a class? 
+	(because in java every method must be enclosed within a class)
+
+36.	What happens if we do not declare main() as public? 
+
+37.	What happens if we do not declare main() as static?
+
+38.	Which command in java is used to invoke the java compiler?
+
+39.	Which command in java is used to invoke the JVM?
+
+40.	Why should main() method be present in all java applications?
+
+41.	What are command line arguments?
+
+42.	What is the use of command line arguments?
+
+43.	How does java collect command line arguments?
+
+44.	Haw many command line arguments can be passed to a java program?
+
+45.	What happens if a java program expects command line arguments but is not sent to it?
+
+46.	Why should an object always have a handle?
+
+47.	What is a handle also called as?
+
+48.	Can we have multiple main() methods within a single class?
+
+49.	Can we have multiple main() methods in a java program?
+
+50.	What are the advantages of object orientation? 
+	(ans- easy software design, easy software maintenance, reusable software)
+51.	What is meant by instantiation? 
+
+52.	Should a class name be a noun or a verb or adjective?
+	(noun)
+
+53.	Should a variable name be a noun or verb or adjective?
+	(noun)
+
+54.	Should a method name be a noun or verb or adjective?
+	(verb)
+
+55.	Should interface name be a noun or verb or adjective?
+	(adjective)
+
+56.	What is the Camel convention for naming a class?
+
+57.	What is the Camel convention for naming a variable?
+
+58.	What is the Camel convention for naming a method?
+
+59.	What are the different ways of creating object in java? 
+	(By new keyword
+	By newInstance() method
+	By clone() method
+	By factory method etc.)
+
+60.	What is an anonymous object?
+
+61.	When is using anonymous object a good approach? 
+	(ans- if the object is to be used only once,if only one behavior of an object has to be activated)
+
+62.	What is the alternative syntax for main() ?
+
+63.	Which are the popular operating systems? Whom is it licensed to?
+
+	(windows-microsoft, unix-AT & T , Macintosh-Apple)   
+
+
+	//PUT THESE QUESTIONS TO SET-2
+
+1.  	What is the basic requirement that an operating system expects from any programming language?
+	 (main())
+
+2. 	 Where does the execution of a program begin from?
+	 (actually from static from static)
+
+3.	  Why should the main() be enclosed with in the class? 
+	(it is a rule in java that every method should be present within a class)
+
+4.  	Is there any convention to name a Java file? 
+	(it should be the name of the class in which main() is present)
+
+

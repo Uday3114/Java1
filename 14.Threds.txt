@@ -1,0 +1,472 @@
+Set-14
+
+1.	What is a thread? 
+	(A thread is a sequence of execution of statements present in the stack)
+	
+2.	What is a process? 
+	(Set of statements present on the stack segment of the ram)
+	
+3.	What is the difference between process and thread?
+	(P-It is a heavy weight entity T-it is a light weight entity; P-switching between process is handled by the os T-switching b/w threads is handled by thread scheduler; 
+	P-switching b/w processes is called  multi processing T-switching b/w threads is called as multithreading)
+
+4.	What are the advantages of threads?
+	(Effective cpu time utilization) 
+
+5.	What is meant by multi threading?
+	(It is an approach where an task is segregated into independent subtasks and a separate stack is assigned to each independent subtask. 
+	This activity is called multithreading. OR having multiple sequence of Execution under the control of the thread scheduler.)
+
+6.	Who manages multi tasking?
+	(OS)
+
+7.	How can a programmer create his own thread? 
+	(by creating an object of the thread class, 2. By creating an object of the class which implements the runnable interface and giving this object as a parameter to the thread class object )
+	
+8.	What is the name of the thread that executes the main method called as? 
+	(main thread)
+
+9.	What is a default priority of main thread? 
+	(5)
+
+10.	Can we change priority of main thread? 
+	(yes setPriority())
+
+11.	Which is the default method that the main thread executes? 
+	(main())
+
+12.	Can we make the main thread to begin execution from any method of our own choice other than the default method it executes? 
+	(no)
+
+13.	Can we change the name of main thread? 
+	(yes setName())
+
+14.	Who creates the main thread? 
+	(JVM and hands it over to the thread scheduler)
+	
+15.	What is a lock? 
+	(lock is a mechanism available in java to ensure that only a single thread makes use of the shared resource. Locks can be attained in java using synchronized key word)
+	
+16.	Is the Thread alive when it is created?
+	(NO.) 
+
+17.	Does the priority of the thread matter during scheduling?
+	(The priority matters if it is pre-emptive os like unix, it doesn’t matter if it is a non-pre-emptive os like windows. 
+	A higher priority thread tends to get more cpu time than a low priority thread.) 
+
+18.	What is the problem associated with single threaded programs? 
+	(possibility of cpu time not getting efficiently utilized)
+
+19.	What is the advantage of single threaded program? 
+	(Multiple stacks need not be created on the stack segment explicitly by the programmer. The burden on the thread scheduler is relatively less.)
+	
+20.	Which is a better way to create a thread? 
+	(implements Runnable)
+	
+21.	Is Runnable a class or interface?
+	 (interface. Interface name has to be adjective)
+	
+22.	Is Thread a class or interface? 
+	(class)
+	
+23.	What is the relationship between Thread and Runnable? 
+	(implements)
+
+24.	Why should we override the run () method of the Thread class?
+	 (Because the run method present in the thread class is empty it must be overriden in order to make it perform the activity as required by the project)
+
+25.	Why should we start a Thread?
+	(When the thread is created it is in the new state. Hence it is the duty of the programmer to call the start() and take the thread to the runnable state. 
+	Once the thread is in the runnable state, the thread scheduler would be able to schedule it.)
+
+26.	Which state would the Thread be when it is created?
+	(New)
+
+27.	What are the components of a program on which lock can be applied?
+	(method, variable, blocks)
+
+28.	Can we start a Thread twice?
+	(NO an exception occurs IllegalThreadStateException)
+
+29.	What happens if we call start () method on a Thread twice?
+	(Same as previous)
+
+30.	Can we explicitly call a run () method on a Thread?
+	(Yes, however doing so would eliminate the participation of the thread scheduler activity. The threads would execute in the same order as specified by the programmer. 
+	It goes against the purpose/ethics of multithreading)
+
+31.	What happens if we explicitly call run () method on a Thread?
+	(Same as above)
+	
+32.	Ideally who must call the run () method of a Thread?
+	(Thread Scheduler)
+
+33.	How do we verify if a Thread is alive?
+	(isAlive())
+
+34.	When the Thread is executing the run () method in which state it is present?
+	(running state)
+
+35.	In which state should the Thread be present in order to execute the run () method?
+	(runnable)
+
+36.	Which are the possible states that the Thread may go to while it is in the running state?
+	(runnable by executing yield(), sleep by executing sleep(), blocked state when the required resource is not available , 
+	dead when the execution of the thread is completed or if interrupt() is executed, wait by executing wait() )
+
+37.	When does the Thread enter sleep state?
+	(sleep())
+
+38.	When does the Thread enter wait state?
+	(wait())
+
+39.	When does the Thread enter blocked state?
+	(resource not available)
+
+40.	Which keyword is used to apply a lock on a resource?	
+	(synchronized)
+
+41.	How can we bring the Thread to life?
+	(start())
+
+42.	When does the Thread enter dead state?
+	(when execution of thread completes or if the interrupt() is executed)
+
+43.	How many Threads can be in the running state at any given point of time?
+	(1)
+
+44.	Does the Thread class provide an implementation to the abstract run () method of the Runnable interface?
+	(Yes, empty body declaration)
+
+45.	What are the possible states from which a Thread can enter Runnable state?
+	(sleep(after sleep duration is completed),new(start()),blocked(when unavailable resource becomes available), wait(when notify() is executed by another thread),running(yield))
+
+46.	Can we have multiple Threads in the new state?
+	(yes)
+
+47.	 Can we have multiple Threads in the runnable state?
+	(yes)
+
+48.	Can we have multiple Threads in the running state?
+	(no)
+
+49.	Can we have multiple Threads in the sleep state?
+	(yes)
+
+50.	Can we have multiple Threads in the blocked state?
+	(yes)
+
+51.	Can we have multiple Threads in the wait state?
+	(yes)
+
+52.	Can we have multiple Threads in the dead state?
+	(yes)
+
+53.	How can we manually kill a Thread?
+	(interrupt())
+
+54.	Which operator is used to create a Thread of execution?
+	(new)
+
+55.	When a Thread is killed are all its lock relinquished ?
+	(released)
+
+56.	What happens when a non-static method is synchronized?
+	(the method is executed by a single thread. Even if the executing thread temporarily halts the other threads would not begin its execution .
+	Only after the other threads completely finishes execution a new thread would be given an opportunity. In simple words if a non static method is 
+	synchronized then such a method becomes a semaphore(monitor))
+
+57.	What happens when a static method is synchronized?
+	(If a synchronized is used with a static method then the lock would be applied on the class.)
+
+58.	Does a Thread relinquish locks when it enters the sleep state?
+	(No)
+	
+59.	Does a Thread relinquish locks when it enters the wait state?
+	(no)
+
+60.	Does a Thread relinquish locks when it enters the blocked state?
+	(no)
+
+61.	What is the difference between yield and sleep?
+	(yield() takes a thread from the running state to the runnable state whereas the sleep() takes it from the running state to the sleep state)
+
+62.	What is the difference between wait and sleep?
+	(wait() takes the thread from running state to the wait() state whereas sleep() takes a thread from running state to the sleep state)
+
+63.	Can we achieve synchronization effect by using join () method?
+	(Yes)
+	
+64.	How does a Thread come out of a sleep state?
+	(when the sleep duration is over it comes out of sleep state and gets into the runnable state)
+	
+65.	In which state can a Thread be interrupted?
+	(any state except new and dead)
+
+66.	How does a Thread come out of a block state?
+	(whenever the required resource becomes available)
+	
+67.	How does a Thread come out of a wait state?
+	(When another thread calls notify() or notifyAll() method then the thread comes out of the wait state)
+	
+68.	How does a Thread come out of a dead state?
+	(it cannot come out of the dead state)
+	
+69.	How does a Thread come out of a runnable state?
+	(When the thread scheduler decides to schedule the thread)
+
+70.	What are the possible reasons for the Thread to move out of running state?
+	()
+
+71.	When should we synchronize a resource?
+	(we should synchronize a resource whenever a lock has to be applied on the resource such that only a single thread must be able to access the resource )
+	
+72.	What is the advantage of synchronization?
+	(Shared resource can be efficiently used without race condition)
+
+73.	What is the disadvantage of synchronization?
+	(Goes against the ethics of mutilthreading. In spite of this synchronized is used in order to efficiently use the shared resource)
+
+74.	How do we make one Thread wait for the other Thread?
+	(join())
+
+75.	Is a Thread alive when it is in the new state?
+	(no)
+
+76.	Is a Thread alive when it is in the running state?
+	(yes)
+
+77.	Is a Thread alive when it is in the runnable state?
+	(yes)
+
+78.	Is a Thread alive when it is in the sleep state?
+	(yes)
+	
+79.	Is a Thread alive when it is in the block state?
+	(yes)
+
+80.	Is a Thread alive when it is in the wait state?
+	(yes)
+
+81.	Is a Thread alive when it is in the dead state?
+	(no)
+
+82.	Is interrupting a Thread equal to killing a Thread?
+	(no)
+
+83.	What is a deadlock?
+	(deadlock is a situation where threads are mutually waiting for one another to complete their execution so that they can complete their execution)
+
+84.	When does a deadlock occur?
+	(Whenever there is cyclic dependency)
+
+85.	How can a deadlock be prevented?
+	(By ensuring that cyclic dependency does not occur during execution , by assigning different priorities to the thread however this approach works only on pre-emptive os like unix)
+	
+86.	What is daemon Thread?
+	(A daemon thread is a thread that executes in the back ground and does subsidiary activities.)
+	
+87.	What role does the daemon Thread play?
+	(It performs subsidiary activities such as releasing the acquired resources, cleaning up memory, spell check , autosave etc)
+	
+88.	How do we make a Thread as daemon Thread?
+	(1.setDaemon() must be made true 2.The activity that the daemon thread must perform must be placed within an infinite loop. 3.It must be given a low priority(<5))
+
+89.	Should the priority of daemon Thread be low or high?
+	(low)
+
+90.	Can you name a few daemon Threads?
+	 (garbage collector,spell check, auto save)
+
+91.	What is the difference between deadlock and livestock?
+	(In deadlock the activity does not get completed since the threads are in the blocked state. However in livestock even though the threads are executing
+	(not in blocked state rather they are entering and exiting the running state and yet the program execution has effectively come to a stand still) , effectively no activity takes place.)
+
+92.	Which facility can be used to enable interaction between Threads executing the same subtask?
+	(synchronized)
+
+93.	Which method can be used to enable interaction between Threads executing the different subtasks?
+	(Synchronized key word, wait(), notify())
+
+94.	What is the difference between notify () and notifyAll () methods?
+	(notify() method would take one thread from the wait state to the runnable state, Whereas notifyAll() would take all the threads present in the wait state to the runnable state)
+	
+95.	Which method can be used to set a name to a Thread?
+	(setName())
+
+96.	Which method can be used to obtain the name of Thread?
+	(getName())
+
+97.	Can the overridden run () method throw exception object? Why?
+	(No because it changes the signature)
+
+98.	Can the run () method return the result of execution?
+	(Since in the signature the return type of run is void, the run() cannot return the result of execution)
+
+99.	Does C support multithreading?
+	(no)
+
+100.	What happens if an exception occurs in one of the Thread of a multithreaded program?
+	(If an exception occurs in the multithreaded environment then exception handling would be performed only on that stack in which exception occurred. 
+	The other threads(other stacks) would proceed with their execution as normal )
+
+101.	How do we verify if the Thread is a daemon Thread? 
+	(isDaemon() )
+	
+102.	Does C++ support multithreading?
+	(No)
+
+103.	How many stacks would be present in the stack segment by default?
+	(one stack the main stack)
+
+104.	How can we create extra stacks in the stack segment?
+	(by creating objects of the thread class)
+	
+105.	Who manages the multiple stacks on the stack segment?
+	(Thread scheduler)
+	
+106.	From which version of java was Thread pool feature made available?
+	(introduced from jdk 1.7 onwards)
+	
+107.	Can we assign a name to the Thread through the Thread class?
+	(yes)
+	
+108.	Can we assign a name to the Thread using the sub class of the Thread class?
+	(using the subclass directly a name cannot be assigned to a thread. Within the subclass constructor, the super class constructor must be called and the name must be passed as parameter  )
+
+109.	What happens if a start () method is invoked on a Thread?
+	(The thread moves from the new state to the runnable state. The thread scheduler becomes aware that there is a thread available in the runnable state and can be scheduled.)
+
+110.	What is a role of volatile keyword?()
+
+111.	What is the datatype of parameter provided to the sleep () method?
+	(long)
+
+112.	If a Thread creates a new Thread then what will be the priority of newly created Thread?
+	(The child threads priority would be the same as that of its parent thread(three))
+
+113.	Does the JVM have to wait for all the daemon Threads to complete to wind up its operation?
+	(Yes)
+
+114.	What are the four variants of constructors present in the Thread class?
+	(Thread t=new Thread(this);    Thread t=new Thread();      Thread t=new Thread(job);     Thread t=new Thread(“BANKING”)     )
+
+115.	How many locks can we apply on an object?
+	(Only one lock can be applied on an object. After the lock is relinquished another lock can be applied by another thread)
+	
+116.	Can a class contain both synchronized and non-synchronized methods?
+	(yes)
+	
+117.	Can a class contain both synchronized and non-synchronized variables?
+	(yes)
+
+118.	Can a class contain both synchronized and non-synchronized blocks?
+	(yes)
+
+119.	Can we apply synchronized keyword on a class?
+	(no)
+
+120.	In which package are the interfaces and classes related to Threading available?
+	(java.lang.*;)
+
+121.	In which version of java was the Callable interface introduced?
+	(JDK 1.6)
+
+122.	What is the difference between Runnable’s run () and Callable’s call () methods?
+
+123.	What is meant by Thread safety?
+	(Thread safety refers to a phenomenon in multithreaded programming in which a shared resource would be utilized by multiple threads such that 
+	improper accessing of the shared resource does not occur, also ensures race condition does not occur. Thread safety can be achieved using 
+	synchronized , join() , immutable classes, using thread safe classes)
+
+124.	What is meant by race condition in java?
+
+125.	How can we share data between two Threads?
+	(using shared object concept)
+
+126.	Are wait (), notify () and notifyAll () methods belong to the Thread class?
+	(No,object class)
+
+127.	To which class does wait (), notify () and notifyAll () methods belong to?
+	(object class)
+
+128.	Why are wait (), notify () and notifyAll () methods members of Object class rather than Thread class?
+	(Since in java locks are not applied on threads rather locks are applied on objects)
+
+129.	What is a Thread local variable?()
+
+130.	Why should wait () and notify () methods be called from synchronized block?
+	(It is the expectation from java API. If it is not put under  synchronized key word IllegalMonitorStateException occurs. 
+	Basically wait() and notify() should be place under synchronized keyword to avoid race condition)
+
+131.	What is a Thread group?()
+
+132.	What is the advantage of using Thread group ?
+	(Thread pool)
+
+133.	How do we verify if a Thread holds a lock or not?
+	(hasLock(). If the thread holds the lock then true would be returned else false would be returned. )
+
+134.	There are three Threads t1, t2 and t3? How do you ensure the sequence t1, t2 and t3 in java?
+	(join())
+
+135.	What does the yield () method of Thread class do?
+	(It send a thread in the running state back to the runnable state)
+
+136.	What is a semaphore in java?
+	(Collection of statements which has to executed by a single thread at any given point of time. It can be achieved using synchronized keyword)
+
+137.	What is a monitor in java?
+	(same as previous)
+	
+138.	What happens if all the Threads in the Thread pool are busy and still a new task is submitted?
+	()
+
+139.	What is meant by busy spin in multithreading?
+	()
+140.	What happens if a Thread throws an exception inside synchronized block?
+	(If a thread throws an exception inside a synchronized block, then the locks that it holds would be relinquished and the thread enters the dead state.
+	 However the other threads would continue with their opertaions)
+
+141.	Mention any three multithreading practice s?
+	(1.Threads should be given such names which clearly represents the activities that they perform. Rather than calling the threads as t1,t2,t3 , it is better to name them 
+	as typing, spellcheck, autosave. 2.Avoid applying locks(Using synchronized) as much as possible, because locks go against the principle of multithreading. 
+	3.If lock has to inevitably applied then it should be done using only synchronized keyword rather than using wait() and notify() under a synchronized keyword )
+
+142.	Is there any means by which a programmer can forcefully take a Thread to the running state?
+	(System.gc())
+
+143.	What is the difference between preemptive scheduling and time slicing?
+	(Using priority in threading is not good because it will execute differently in different OS. This goes against the platform independence of java. 
+	To avoid this one of the best practices in threading is to assign same priority to all the threads normally 5 )
+
+144.	Can we make the user Thread as daemon Thread after starting it?
+	(NO)
+
+145.	Can we make the user Thread as daemon Thread before starting it?
+	(Yes)
+
+146.	What is shutdown hook?
+	(Jvm would perform clean up operations in the end i.e shutdownhook thread would be executed. After execution of this thread the jvm stops its execution and gets popped from the stack)
+
+147.	What is meant by static synchronization?
+	(If synchronized is used on a static method then the lock is applied on the entire class)
+
+148.	What is starvation?
+	(Starvation refers to a case where a thread which is the blocked state and is waiting for the resource never gets the resource since the thread holding the resource is not relinquishing it.)
+
+149.	Does the priority of a Thread play a vital role in its scheduling?
+	
+150.	Name the methods available in Runnable interface?
+
+151.	Name the methods available in Thread class?
+
+152.	Name the methods available in Object class?
+
+153.	Name the methods used for inter-Thread communication?
+
+154.	What are the values of maximum priority, minimum priority and normal priority in java?
+
+155.	How many Threads can access a monitor at a time?
+
+156.	What is the priority of garbage collector Thread?

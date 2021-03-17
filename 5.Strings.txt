@@ -1,0 +1,243 @@
+Set-5
+
+1.	What is a String?
+	(String is a series of characters, which is enclosed within double quotes and is treated as an object)
+
+2.	Is String an object in Java?
+	(Yes)
+
+3.	Can we access individual character in String?
+	(NO)
+
+4.	Does a Java String end with a null character?
+	(no)..
+
+5.	What are the types of String in Java?
+	(Mutable, immutable)
+
+6.	Who de-allocates memory of a string?
+	(Garbage collector)
+	
+7.	What are the two ways of creating immutable strings?
+	(String s=”Rama”; String s=new String(“Rama”);)
+
+8.	Why are immutable strings required?
+	(In real world immutable String data exists: dob, gender, name, father name ,mother name) 
+
+9.	How are mutable strings created in Java?
+	(StringBuffer and StringBuilder)
+
+10.	Why are mutable strings required in Java?
+	(Real life has mutable string data : Addr, qualification, pwd)
+
+11.	 Where are immutable strings created in Java?
+	( heap Segment)
+
+12.	What is a constant pool?
+	(Is a region of the heap segment on the ram where memory is allocated for such strings that are created without using the new operator. Duplicates are not permitted in this region)
+
+13.	What is non constant pool?
+	(Is a region of the heap segment where memory is allocated for such strings which are created using the new operator or using expressions. Duplicates are permitted in this region.)
+
+14.	What is the role of equals() in Java?
+	(compare two strings)
+
+15.	What is the role of == operator in Java?
+	(compare two references)
+
+16.	What is the role = operator in Java?
+	(Assignment, right to left associative)
+
+17.	Name some of the commonly used in built methods of String class?
+	(startsWith(),endsWith(),toUpperCase(),toLowerCase(),contains())
+
+18.	Mention the difference between C Strings and Java Strings.
+	(c-null terminated,j-not null terminated;
+	c-not treated as an object , j-treated as an object ; 
+	c-Memory is not allocated on the heap seg, j-is allocated ;
+	c- Memory is not deallocated by the gc, j-it is deallocated by the gc;
+	c- individual characters in the string can be accessed ;j- individual characters in the string cannot be accessed by the programmer’s; 
+	c-not categorization as immutable and mutable j-Categorized as immutable and mutable )
+
+19.	How do u compare two Strings in Java?
+	(equals(), compareTo() , ==, equalsIgnoreCase())
+
+20.	What is a String pool in Java?
+	( Where memory is allocated for strings, divided into 2 regions namely cp and ncp)
+
+21.	Can we use String in switch case?
+	(upto jdk 1.7 only integers where allowed, since 1.8 we can use string also)
+
+22.	Why is String class considered immutable?
+	(Strings(objects) created using String class cannot be altered)
+
+23.	How is it possible for two string objects with identical values not to be equal under == operator?
+	(If one is in cp and other is in ncp or if both are created using new i.e both in ncp)
+
+24.	Explain the difference between the following statements?
+	String s=”Welcome to ABC”;//cp
+	String s= new String(”Welcome to ABC”);//ncp
+
+25.	How to concatenate two different Strings?
+	(concat, append(), +)
+
+26.	What is the output of the following program?
+
+class Test 
+{
+	public static void main(String[] args) 
+	{
+		String s="Hello";
+		String s1=new String("Hello");
+		System.out.println("s==s1 "+(s==s1));
+		System.out.println("s.equals(s1) "+(s.equals(s1));
+	}
+}
+
+27.	Is null a keyword in java?
+	(no)
+
+28.	What happens when you add a char value to a String?
+	(the char int double float and boolean type data would be converted to a string and would be concatenated with the existing string and would be printed using toString())
+
+29.	What happens when you add a int value to a String?
+
+30.	What happens when you add a double value to a String?
+
+31.	What happens when you add a float value to a String?
+
+32.	What happens when you add a Boolean value to a String?
+
+33.	Can we directly print objects?
+	(no, rather than the object value getting printed , Object address gets printed as shown below)
+
+34.	Can we directly print primitive data types?
+	(yes)
+
+35.	Does ArrayIndexOutOfBoundsException occur in case of immutable Strings? Why?
+	(yes,if charAt() is used)
+
+36.	Does ArrayIndexOutOfBoundsException occur in case of mutable Strings? Why?
+	(Yes, same as above)
+
+37.	Name a few Immutable classes?
+	(String Math)
+
+38.	Is the String class mutable or immutable?
+	(Immutable)
+
+39.	In which package is the String class present?
+	(java.lang)
+
+40.	What is a String literal?
+	(fixed value enclosed within “ ” or a series of character enclosed within “ “)
+
+41.	What are the four ways of creating a String object?
+
+42.	What are the two ways in which Strings can be concatenated?
+
+43.	In how many ways can String comparison be performed?
+
+44.	Give the memory map for String s1 = “Rama”;(rama)
+
+45.	Give the memory map for String s1 = “Rama”; s1.concat(“Sita”)(rama);
+
+46.	Give the memory map for String s1 = “Rama”; s1=s1.concat(“Sita”);(ramasita)
+
+47.	What is the role of charAt()?
+
+48.	What is the role of equals()?
+
+49.	What is the role of equalsIgnoreCase()?
+
+50.	What is the role of length()?
+
+51.	What is the role of substring()?
+
+52.	Explain the two versions of substring()?
+
+53.	 What is the role of  toLowerCase()?
+
+54.	What is the role of  toUpperCase()?
+
+55.	What is the role of  valueOf()?
+
+56.	 How does valueOf() behave on objects?
+
+57.	What is the role of toString()?
+
+58.	What is the role of contains()?
+
+59.	What is the role of concat()?
+
+60.	What is the role of isEmpty()?
+
+61.	What is the role of indexOf()?
+
+62.	Which classes are used to create mutable classes in java?
+
+63.	What is the difference between StringBuffer and StringBuilder class?
+
+64.	What are the three constructers of StringBuffer class?
+
+65.	What is the default buffer size of the StringBuffer class?
+
+66.	What is the role of append()?
+
+67.	What is the role of capacity()?
+
+68.	What is the role of ensureCapacity()?
+
+69.	What are the three constructors of StringBuilder?
+
+70.	In which class is the toString() present?
+	(Object class)
+
+71.	What is the role of intern()?
+
+72.	What is the role of StringTokenizer class?
+	(chops a large string at a specified character and provides tokens)
+
+73.	In which package is the StringTokenizer class present?
+	(java.util)
+
+74.	When was the StringBuilder class introduced in Java? 
+	(jdk 1.5)
+
+75.	Can we explicitly put a string object which is in the non-constant pool into the constant pool?
+	(intern(), for the reverse operation there is no method)
+
+76.	What is an immutable object?
+	(An object whose state can never be changed is called an immutable object)
+
+77.	What would happen if an immutable object is attempted for modification?
+	(A copy of the object would be taken and would be modified whereas the original object would still remain immutable)
+
+78.	Which exception is generated if we try to mutate an immutable object?
+	(IllegalObjectStateException)
+
+79.	Where does the string pool exist on the heap? 
+	(permanent area)
+
+80.	Is String class final in Java?
+	(Yes)
+
+81.	Why is char array preferred to store password in Java than a String? 
+	(Passwords  are normally frequently modified hence it must be created either using the StringBuffer or the builder class or a char array can be used)
+
+82.	Why is the String class final in Java? 
+	(security reason, allows compiler to perform optimization, makes it easy to achieve thread safety,so that it cannot be subclassed)
+
+83.	Is the String class thread safe?
+	(Yes)
+
+84.	Is StringBuffer class thread safe?
+	(Yes)
+
+85.	Is StringBuilder class thread safe?
+	(No)
+
+86.	What is the difference between declaring a String and defining a String?(Declaration- String s=new String() or String s=null;  Defining- String s = new String(“Rama”) or String s=”Rama”);
+
+
+
